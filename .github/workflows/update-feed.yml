@@ -1,0 +1,66 @@
+name: update-feed
+
+on:
+  schedule:
+    # 每天 08:00 与 20:00（北京时间 = UTC 00:00 / 12:00）
+    - cron: "0 0,12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Collect & build daily feed
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+        run: |
+          python3 scripts/update_feed.py
+
+      - name: Commit data update
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update daily feed"
+          file_pattern: "data/*.json data/*.js"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Build Pages site directory
+        run: |
+          rm -rf site && mkdir -p site
+          cp ecommerce-ai-dynamic-library.html site/
+          cp agent-daily-output.js site/
+          cp -r data site/
+          [ -d material-package ] && cp -r material-package site/ || true
+          cat > site/index.html <<'EOF'
+          <!DOCTYPE html><meta charset="utf-8">
+          <meta http-equiv="refresh" content="0; url=ecommerce-ai-dynamic-library.html">
+          <p>正在打开内容库… <a href="ecommerce-ai-dynamic-library.html">点这里</a></p>
+          EOF
+          touch site/.nojekyll
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

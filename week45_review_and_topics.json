@@ -1,0 +1,78 @@
+{
+  "topics": [
+    {
+      "id": "HOT001",
+      "category": "photo",
+      "title": "双11大促在即！AI帮你一天生成100张主图的秘密武器",
+      "tags": ["双11", "热门", "效率工具"],
+      "difficulty": "中等",
+      "priority": "S",
+      "script_template": "cost_compare",
+      "status": "pending",
+      "created_at": "2026-11-08",
+      "isHot": true
+    },
+    {
+      "id": "HOT002",
+      "category": "photo",
+      "title": "AI模特图新玩法：一键换肤色换发型，跨境卖家必备",
+      "tags": ["跨境电商", "热门", "新功能"],
+      "difficulty": "中等",
+      "priority": "A",
+      "script_template": "tutorial",
+      "status": "pending",
+      "created_at": "2026-11-08",
+      "isHot": true
+    },
+    {
+      "id": "HOT003",
+      "category": "content",
+      "title": "抖音新号冷启动：用AI批量产出30条视频，3天起号攻略",
+      "tags": ["起号攻略", "热门", "实战"],
+      "difficulty": "中等",
+      "priority": "S",
+      "script_template": "buildshow",
+      "status": "pending",
+      "created_at": "2026-11-08",
+      "isHot": true
+    },
+    {
+      "id": "HOT004",
+      "category": "live",
+      "title": "数字人直播又进化了！最新AI实时互动功能实测",
+      "tags": ["数字人", "热门", "实测"],
+      "difficulty": "中等",
+      "priority": "A",
+      "script_template": "tool_review",
+      "status": "pending",
+      "created_at": "2026-11-08",
+      "isHot": true
+    },
+    {
+      "id": "HOT005",
+      "category": "trend",
+      "title": "2026双11复盘：AI在电商中的5个新趋势和机会点",
+      "tags": ["双11", "热门", "深度分析"],
+      "difficulty": "中等",
+      "priority": "A",
+      "script_template": "trend",
+      "status": "pending",
+      "created_at": "2026-11-08",
+      "isHot": true
+    }
+  ],
+  "reviews": [
+    {
+      "id": "REV-2026-W45",
+      "week": "第45周",
+      "dates": "11.3-11.9",
+      "good": "1. 内容库搭建完成，7大分类50+选题储备充足\n2. 9种爆款脚本模板整理完毕，可直接复用\n3. 建立了完整的数据追踪体系（发布记录+周复盘）\n4. 明确了账号定位：电商+AI工具测评方向",
+      "bad": "1. 本周尚未发布任何内容，账号冷启动较慢\n2. 选题方向较多，需要聚焦核心品类做深\n3. 缺乏竞品对标数据，内容方向不够明确\n4. 还没有建立固定的内容生产流程",
+      "insights": "1. 电商+AI赛道目前竞争较少，是切入的好时机\n2. 工具测评类和成本对比类内容最容易起量\n3. 账号定位需要更聚焦，建议先从AI作图/数字人两个方向突破\n4. 双11期间是流量高峰期，应抓紧产出相关内容",
+      "plan": "1. 下周发布3条内容：2条工具测评+1条成本对比\n2. 选定3个对标账号，建立竞品监控\n3. 测试发布时间：早8点 vs 晚8点，找到最佳发布窗口\n4. 重点优化封面和标题，提升点击率\n5. 双11前产出2条大促相关内容，蹭热点流量",
+      "createdAt": "2026-11-08T10:00:00.000Z"
+    }
+  ],
+  "exportedAt": "2026-11-08T10:00:00.000Z",
+  "note": "第45周周日运营日数据 - 包含周复盘和5个双11热点选题"
+}
