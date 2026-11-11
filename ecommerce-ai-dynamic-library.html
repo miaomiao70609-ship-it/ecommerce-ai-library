@@ -1504,6 +1504,15 @@
           </div>
           <div class="feed-list" id="feed-competitornews"></div>
         </div>
+
+        <!-- 今日文案素材 -->
+        <div class="feed-card" style="grid-column: 1 / -1;">
+          <div class="feed-card-header">
+            <span class="feed-icon">✍️</span>
+            <h3>今日文案素材包 <span style="font-size:0.7rem;color:var(--muted);font-weight:normal;margin-left:8px;">热点 → 可直接用的钩子/分镜/金句</span></h3>
+          </div>
+          <div id="feed-content-materials"></div>
+        </div>
       </div>
     </section>
 
@@ -8127,6 +8136,7 @@ async function renderDailyFeed() {
   renderFeedList('feed-insights', feed.insights || [], '💡');
   renderFeedList('feed-topicideas', feed.topicIdeas || [], '📝');
   renderFeedList('feed-competitornews', feed.competitorNews || [], '👀');
+  renderContentMaterials(feed.contentMaterials || []);
 
   // 同步更新仪表盘热点看板
   if (typeof renderDashboardHotTopics === 'function') {
@@ -8136,6 +8146,66 @@ async function renderDailyFeed() {
   if (typeof renderPlannerHotTopics === 'function') {
     renderPlannerHotTopics();
   }
+}
+
+// ============ 今日文案素材包渲染 ============
+function renderContentMaterials(materials) {
+  const container = document.getElementById('feed-content-materials');
+  if (!container) return;
+  if (!materials || materials.length === 0) {
+    container.innerHTML = '<div style="padding:1.25rem;text-align:center;color:var(--muted);font-size:0.8rem;">暂无文案素材，配置 LLM API Key 后自动生成</div>';
+    return;
+  }
+  const catLabel = { photo: 'AI作图', content: '内容运营', live: '直播带货', product: '工具测评', service: '商家服务', trend: '行业趋势' };
+  container.innerHTML = materials.map((m, i) => {
+    const script = Array.isArray(m.script) ? m.script : [];
+    const kp = Array.isArray(m.keyPoints) ? m.keyPoints : [];
+    const cat = catLabel[m.category] || m.category || '综合';
+    const scriptHtml = script.map(s => {
+      const shot = s.shot || s.scene || '分镜';
+      const visual = s.visual || s画面 || '';
+      const vo = s.voiceover || s口播 || s.text || '';
+      return `<div style="display:flex;gap:8px;padding:6px 0;border-bottom:1px solid var(--border);font-size:0.8rem;">
+        <span style="color:var(--accent);font-weight:600;white-space:nowrap;">${shot}</span>
+        <span style="color:var(--text-secondary);">${visual ? '【' + visual + '】' : ''}${vo}</span>
+      </div>`;
+    }).join('');
+    return `<div style="border:1px solid var(--border);border-radius:10px;padding:14px;margin-bottom:12px;background:var(--bg-secondary);">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <span style="font-size:0.7rem;padding:2px 8px;background:var(--accent);color:#fff;border-radius:10px;">${cat}</span>
+        <button class="btn btn-secondary" style="font-size:0.7rem;padding:4px 10px;" onclick="copyMaterialText(${i})">📋 复制文案</button>
+      </div>
+      <div style="font-weight:600;font-size:0.9rem;margin-bottom:6px;">${m.source || ''}</div>
+      <div style="font-size:0.8rem;color:var(--danger);margin-bottom:6px;">🎣 钩子：${m.hook || ''}</div>
+      <div style="font-size:0.8rem;color:var(--text-secondary);margin-bottom:8px;">🎯 角度：${m.angle || ''}</div>
+      <div style="font-size:0.75rem;color:var(--muted);margin-bottom:6px;">📖 脚本大纲：</div>
+      ${scriptHtml}
+      ${kp.length ? '<div style="margin-top:8px;font-size:0.8rem;">💎 金句：' + kp.map(k => '<span style="background:var(--bg-tertiary);padding:2px 8px;border-radius:6px;margin-right:6px;">' + k + '</span>').join('') + '</div>' : ''}
+      <div style="margin-top:8px;font-size:0.8rem;color:var(--accent);">👉 ${m.cta || ''}</div>
+    </div>`;
+  }).join('');
+  // 缓存供复制使用
+  window._contentMaterialsCache = materials;
+}
+
+function copyMaterialText(idx) {
+  const m = (window._contentMaterialsCache || [])[idx];
+  if (!m) return;
+  const script = Array.isArray(m.script) ? m.script.map(s => `【${s.shot || '分镜'}】${s.visual ? '画面：' + s.visual + ' ' : ''}口播：${s.voiceover || s.text || ''}`).join('\n') : '';
+  const kp = Array.isArray(m.keyPoints) ? m.keyPoints.join('\n') : '';
+  const text = `来源：${m.source}\n钩子：${m.hook}\n角度：${m.angle}\n脚本：\n${script}\n金句：\n${kp}\n引导：${m.cta}`;
+  navigator.clipboard.writeText(text).then(() => {
+    alert('✅ 文案素材已复制到剪贴板');
+  }).catch(() => {
+    // 降级：用 textarea
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+    alert('✅ 文案素材已复制到剪贴板');
+  });
 }
 
 function renderFeedList(containerId, items, defaultIcon) {

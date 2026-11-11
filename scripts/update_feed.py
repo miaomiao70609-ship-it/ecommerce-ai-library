@@ -271,17 +271,29 @@ def shorten(text, n=120):
 
 
 # ============ LLM 增强（可选） ============
+LLM_SYSTEM_PROMPT = """你是电商+AI赛道的爆款内容操盘手。给你一批当天热点新闻，输出 JSON，包含：
+1. classified: 每条新闻分类到 hotTopics(平台热点)/aiTools(AI工具)/insights(运营洞察)/competitorNews(竞品动态)，
+   每条含 title(原标题)、desc(≤120字摘要，保留数字与来源)、tag(关键词)。
+2. topicIdeas: 5 个短视频选题，含 title、desc、tag、category(photo/content/live/product/service/trend)。
+3. contentMaterials: 从热点中挑 5 个最适合做内容的，每个生成可直接用的文案素材包：
+   - source: 来源热点标题
+   - hook: 前3秒钩子（一句话制造悬念或反差）
+   - angle: 切入角度（这个热点可以从什么视角讲）
+   - script: 3-5 个分镜的脚本大纲，每镜含「画面+口播」
+   - keyPoints: 2-3 条关键话术/金句
+   - cta: 引导动作（关注/评论/进主页等）
+   - category: photo/content/live/product/service/trend
+输出必须是纯 JSON，不要 Markdown 代码块。"""
+
+
 def llm_enrich(items, key, base_url, model):
     if not key:
         return None
     payload = {
         "model": model,
-        "temperature": 0.3,
+        "temperature": 0.7,
         "messages": [
-            {"role": "system", "content": "你是电商+AI赛道的内容研究员。给你一批新闻标题与摘要，请完成三件事："
-             "1) 判断每条新闻归属：hotTopics(平台热点)/aiTools(AI工具)/insights(运营洞察)/competitorNews(竞品动态)；"
-             "2) 为每条写一段不超过120字的中文摘要，保留具体数字与来源；"
-             "3) 从中提炼5个适合做短视频的选题，返回 JSON。"},
+            {"role": "system", "content": LLM_SYSTEM_PROMPT},
             {"role": "user", "content": json.dumps(items[:40], ensure_ascii=False)},
         ],
     }
@@ -292,17 +304,41 @@ def llm_enrich(items, key, base_url, model):
             headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
             method="POST",
         )
-        with urllib.request.urlopen(req, timeout=60) as r:
+        with urllib.request.urlopen(req, timeout=120) as r:
             resp = json.loads(r.read().decode("utf-8"))
         content = resp["choices"][0]["message"]["content"]
-        # 提取 JSON
-        m = re.search(r"\{.*\}", content, re.S)
+        # 提取 JSON（兼容 ```json ... ``` 包裹）
+        m = re.search(r"\{[\s\S]*\}", content)
         if not m:
+            print("[llm] 响应中未找到 JSON")
             return None
-        return json.loads(m.group(0))
+        result = json.loads(m.group(0))
+        print("[llm] 文案素材包生成成功")
+        return result
     except Exception as e:
         print(f"[llm] 调用失败，使用启发式：{e}")
         return None
+
+
+def heuristic_content_materials(items):
+    """无 LLM 时的兜底文案素材：基于标题生成简单钩子和脚本大纲。"""
+    materials = []
+    for it in items[:5]:
+        title = it["title"]
+        materials.append({
+            "source": title,
+            "hook": f"你知道吗？{title}，背后藏着电商人必须看懂的信号。",
+            "angle": "从商家实战角度拆解这个热点对运营的影响",
+            "script": [
+                {"shot": "开场", "visual": "热点数据截图", "voiceover": f"今天聊{title}，这事跟每个做电商的都有关系。"},
+                {"shot": "拆解", "visual": "要点列表", "voiceover": "三个关键点你必须知道……"},
+                {"shot": "落地", "visual": "操作步骤", "voiceover": "具体怎么用，我给你拆成三步走。"},
+            ],
+            "keyPoints": [f"核心：{title}", "趋势：平台正在加码这个方向"],
+            "cta": "关注我，每天更新电商+AI的实战干货。",
+            "category": infer_topic_category(title),
+        })
+    return materials
 
 
 # ============ 组装 ============
@@ -348,7 +384,8 @@ def build_feed():
         })
 
     # 每个桶取前 5
-    feed = {"hotTopics": [], "aiTools": [], "insights": [], "topicIdeas": [], "competitorNews": []}
+    feed = {"hotTopics": [], "aiTools": [], "insights": [],
+            "topicIdeas": [], "competitorNews": [], "contentMaterials": []}
     for k in ["hotTopics", "aiTools", "insights", "competitorNews"]:
         feed[k] = buckets[k][:5]
 
@@ -368,7 +405,7 @@ def build_feed():
         })
     feed["topicIdeas"] = topic_ideas[:5]
 
-    # LLM 增强（覆盖摘要与选题）
+    # 文案素材包：热点 → 可直接用的钩子/脚本大纲/关键话术
     key = os.environ.get("LLM_API_KEY")
     base_url = os.environ.get("LLM_BASE_URL", "https://ark.cn-beijing.volces.com/api/v3")
     model = os.environ.get("LLM_MODEL", "doubao-seed-1.6")
@@ -380,7 +417,15 @@ def build_feed():
                     feed[k] = enriched[k][:5]
             if isinstance(enriched.get("topicIdeas"), list) and enriched["topicIdeas"]:
                 feed["topicIdeas"] = enriched["topicIdeas"][:5]
-            print("[llm] 已用 LLM 重写摘要与选题")
+            if isinstance(enriched.get("contentMaterials"), list) and enriched["contentMaterials"]:
+                feed["contentMaterials"] = enriched["contentMaterials"][:5]
+                print("[llm] 已用 LLM 生成文案素材包")
+            else:
+                feed["contentMaterials"] = heuristic_content_materials(topic_pool)
+                print("[llm] LLM 未返回 contentMaterials，使用启发式素材")
+    else:
+        feed["contentMaterials"] = heuristic_content_materials(topic_pool)
+        print("[heuristic] 无 LLM Key，使用启发式文案素材")
 
     return feed
 
