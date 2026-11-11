@@ -57,8 +57,14 @@ WEIBO_SOURCES = [
     "https://api.vvhan.com/api/hotlist?type=weiboHot",
     "https://api.tenapi.cn/v2/weibohot",
 ]
+# B站官方公开 API（无需登录，直接返回 JSON）
+BILIBILI_SOURCES = [
+    "https://api.bilibili.com/x/web-interface/popular?ps=30&pn=1",   # 热门视频
+    "https://api.bilibili.com/x/web-interface/ranking/v2?rid=0&type=all",  # 全站排行榜
+    "https://app.bilibili.com/x/v2/search/trending/ranking",         # 热搜词
+]
 # 每个平台抓取后保留的条目数（按平台配额，避免单一源挤占）
-PLATFORM_QUOTA = {"douyin": 15, "xiaohongshu": 15, "weibo": 10}
+PLATFORM_QUOTA = {"douyin": 15, "xiaohongshu": 15, "weibo": 10, "bilibili": 20}
 
 # 电商 + AI 关键词过滤
 ECOM_AI_KEYWORDS = [
@@ -140,6 +146,9 @@ def _extract_rows(data):
     rows = data.get("data")
     if isinstance(rows, list):
         return rows
+    # B站: {data: {list: [...]}}
+    if isinstance(rows, dict) and isinstance(rows.get("list"), list):
+        return rows["list"]
     # rebang.today: {code, items: [...]}
     rows = data.get("items")
     if isinstance(rows, list):
@@ -158,22 +167,27 @@ def fetch_hotlist(url, platform):
     for r in rows:
         if not isinstance(r, dict):
             continue
-        title = (r.get("title") or r.get("name") or r.get("word") or "").strip()
-        desc = (r.get("desc") or r.get("hot") or r.get("num") or r.get("tag") or "").strip()
+        # B站热搜字段为 show_name/keyword，视频为 title
+        title = (r.get("title") or r.get("show_name") or r.get("keyword")
+                 or r.get("name") or r.get("word") or "").strip()
+        # B站视频简介在 desc，播放量在 stat.view
+        desc = (r.get("desc") or r.get("hot") or r.get("num")
+                or r.get("tag") or "").strip()
         if title:
             items.append({"title": title, "desc": str(desc), "link": "", "pub": "", "platform": platform})
     return items
 
 
 def fetch_all_hotlist():
-    """一次性并发抓取所有平台的所有热榜接口，按平台返回首个有结果的批次。"""
+    """一次性并发抓取所有平台的所有热榜接口，按平台合并后按配额截断。"""
     platform_sources = [
         ("douyin", DOUYIN_SOURCES),
         ("xiaohongshu", XIAOHONGSHU_SOURCES),
         ("weibo", WEIBO_SOURCES),
+        ("bilibili", BILIBILI_SOURCES),
     ]
     results = {plat: [] for plat, _ in platform_sources}
-    ex = ThreadPoolExecutor(max_workers=11)
+    ex = ThreadPoolExecutor(max_workers=14)
     futures = {}
     for plat, sources in platform_sources:
         for url in sources:
@@ -182,14 +196,17 @@ def fetch_all_hotlist():
         for fut in as_completed(futures):
             plat, url = futures[fut]
             items = fut.result()
-            if items and not results[plat]:
-                quota = PLATFORM_QUOTA.get(plat, 10)
-                results[plat] = items[:quota]
-                print(f"[hotlist] {plat} <- {url} ({len(items)} 条)")
+            if items:
+                results[plat].extend(items)
+                print(f"[hotlist] {plat} <- {url} (+{len(items)} 条)")
     finally:
         for f in futures:
             f.cancel()
         ex.shutdown(wait=False)
+    # 按平台配额截断
+    for plat in results:
+        quota = PLATFORM_QUOTA.get(plat, 10)
+        results[plat] = results[plat][:quota]
     return results
 
 
@@ -299,7 +316,7 @@ def build_feed():
     rss_ex.shutdown(wait=False)
     # 2) 平台热搜：抖音 / 小红书 / 微博（每平台多接口兜底，按配额截取）
     hot_results = fetch_all_hotlist()
-    for plat in ("douyin", "xiaohongshu", "weibo"):
+    for plat in ("douyin", "xiaohongshu", "weibo", "bilibili"):
         all_items.extend(hot_results.get(plat, []))
     # 平台热榜全部失败时提示，但不阻塞后续 RSS 数据
     if not any(hot_results.values()):
