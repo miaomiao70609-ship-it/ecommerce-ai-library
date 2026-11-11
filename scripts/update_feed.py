@@ -14,11 +14,13 @@
 import json
 import os
 import re
+import sys
 import hashlib
 import html as html_mod
 import urllib.request
 import urllib.error
 from datetime import datetime, timezone, timedelta
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from xml.etree import ElementTree as ET
 
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
@@ -36,12 +38,27 @@ RSS_SOURCES = [
     "https://www.paidai.com/rss.xml",              # 派代
 ]
 
-# 热搜聚合 API（返回 JSON，容错，失败则跳过）
-HOTLIST_SOURCES = [
-    ("https://api.vvhan.com/api/hotlist?type=douyinHot", "douyin"),
-    ("https://api.vvhan.com/api/hotlist?type=weiboHot", "weibo"),
-    ("https://api.tenapi.cn/v1/douyin", "douyin"),
+# 热搜聚合 API：每个平台配多个兜底接口，任一失败自动跳过。
+# 响应结构因服务而异，fetch_hotlist 会做兼容解析。
+DOUYIN_SOURCES = [
+    "https://api-hot.imsyy.top/douyin",
+    "https://api.vvhan.com/api/hotlist?type=douyinHot",
+    "https://api.tenapi.cn/v2/douyinhot",
+    "https://api.rebang.today/v1/items?type=douyin",
 ]
+XIAOHONGSHU_SOURCES = [
+    "https://api-hot.imsyy.top/xiaohongshu",
+    "https://api.vvhan.com/api/hotlist?type=xhsHot",
+    "https://api.tenapi.cn/v2/xhshot",
+    "https://api.rebang.today/v1/items?type=xiaohongshu",
+]
+WEIBO_SOURCES = [
+    "https://api-hot.imsyy.top/weibo",
+    "https://api.vvhan.com/api/hotlist?type=weiboHot",
+    "https://api.tenapi.cn/v2/weibohot",
+]
+# 每个平台抓取后保留的条目数（按平台配额，避免单一源挤占）
+PLATFORM_QUOTA = {"douyin": 15, "xiaohongshu": 15, "weibo": 10}
 
 # 电商 + AI 关键词过滤
 ECOM_AI_KEYWORDS = [
@@ -73,9 +90,12 @@ TOPIC_CATEGORY_MAP = {
 
 
 # ============ 抓取 ============
-def http_get(url):
+HOTLIST_TIMEOUT = 5  # 热榜接口超时更短，失败快速跳过
+
+
+def http_get(url, timeout=TIMEOUT):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=TIMEOUT) as r:
+    with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read()
 
 
@@ -110,24 +130,67 @@ def fetch_rss(url):
     return items
 
 
+def _extract_rows(data):
+    """兼容多种热榜 API 响应结构，返回条目列表。"""
+    if isinstance(data, list):
+        return data
+    if not isinstance(data, dict):
+        return []
+    # imsyy: {data: [...]}  ；vvhan: {data: [...]}  ；tenapi: {data: [...]}
+    rows = data.get("data")
+    if isinstance(rows, list):
+        return rows
+    # rebang.today: {code, items: [...]}
+    rows = data.get("items")
+    if isinstance(rows, list):
+        return rows
+    return []
+
+
 def fetch_hotlist(url, platform):
     items = []
     try:
-        raw = http_get(url)
+        raw = http_get(url, timeout=HOTLIST_TIMEOUT)
         data = json.loads(raw.decode("utf-8", errors="ignore"))
     except Exception:
         return items
-    rows = data.get("data") if isinstance(data, dict) else data
-    if not isinstance(rows, list):
-        return items
+    rows = _extract_rows(data)
     for r in rows:
         if not isinstance(r, dict):
             continue
-        title = (r.get("title") or r.get("name") or "").strip()
-        desc = (r.get("desc") or r.get("hot") or "").strip()
+        title = (r.get("title") or r.get("name") or r.get("word") or "").strip()
+        desc = (r.get("desc") or r.get("hot") or r.get("num") or r.get("tag") or "").strip()
         if title:
-            items.append({"title": title, "desc": str(desc), "link": "", "pub": ""})
+            items.append({"title": title, "desc": str(desc), "link": "", "pub": "", "platform": platform})
     return items
+
+
+def fetch_all_hotlist():
+    """一次性并发抓取所有平台的所有热榜接口，按平台返回首个有结果的批次。"""
+    platform_sources = [
+        ("douyin", DOUYIN_SOURCES),
+        ("xiaohongshu", XIAOHONGSHU_SOURCES),
+        ("weibo", WEIBO_SOURCES),
+    ]
+    results = {plat: [] for plat, _ in platform_sources}
+    ex = ThreadPoolExecutor(max_workers=11)
+    futures = {}
+    for plat, sources in platform_sources:
+        for url in sources:
+            futures[ex.submit(fetch_hotlist, url, plat)] = (plat, url)
+    try:
+        for fut in as_completed(futures):
+            plat, url = futures[fut]
+            items = fut.result()
+            if items and not results[plat]:
+                quota = PLATFORM_QUOTA.get(plat, 10)
+                results[plat] = items[:quota]
+                print(f"[hotlist] {plat} <- {url} ({len(items)} 条)")
+    finally:
+        for f in futures:
+            f.cancel()
+        ex.shutdown(wait=False)
+    return results
 
 
 def clean_html(text):
@@ -228,10 +291,19 @@ def llm_enrich(items, key, base_url, model):
 # ============ 组装 ============
 def build_feed():
     all_items = []
-    for url in RSS_SOURCES:
-        all_items.extend(fetch_rss(url))
-    for url, plat in HOTLIST_SOURCES:
-        all_items.extend(fetch_hotlist(url, plat))
+    # 1) RSS 媒体源（并发抓取，失败源自动跳过）
+    rss_ex = ThreadPoolExecutor(max_workers=len(RSS_SOURCES))
+    rss_futs = [rss_ex.submit(fetch_rss, url) for url in RSS_SOURCES]
+    for fut in as_completed(rss_futs):
+        all_items.extend(fut.result())
+    rss_ex.shutdown(wait=False)
+    # 2) 平台热搜：抖音 / 小红书 / 微博（每平台多接口兜底，按配额截取）
+    hot_results = fetch_all_hotlist()
+    for plat in ("douyin", "xiaohongshu", "weibo"):
+        all_items.extend(hot_results.get(plat, []))
+    # 平台热榜全部失败时提示，但不阻塞后续 RSS 数据
+    if not any(hot_results.values()):
+        print("[hotlist] 所有平台热榜接口均不可用，仅使用 RSS 媒体源")
 
     print(f"[collect] 原始条目 {len(all_items)} 条")
     all_items = dedupe(all_items)
@@ -334,3 +406,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+    # 热榜抓取线程为非守护线程，数据已落盘，强制退出避免等待超时线程
+    sys.stdout.flush()
+    sys.stderr.flush()
+    os._exit(0)
