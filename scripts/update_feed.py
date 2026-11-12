@@ -284,12 +284,15 @@ def desc_is_junk(desc):
     return False
 
 
-def fix_echoed_desc(feed):
-    """模型照抄原文时，把不合格摘要替换成标题，保证线上不出现正文噪音。"""
+def fix_echoed_desc(feed, force=False):
+    """模型照抄原文时，把不合格摘要替换成标题，保证线上不出现正文噪音。
+    force=True 时（LLM 不可用）所有摘要一律用标题兜底。"""
     for k in ["hotTopics", "aiTools", "insights", "competitorNews", "topicIdeas"]:
         items = feed.get(k) or []
         for it in items:
-            if isinstance(it, dict) and desc_is_junk(str(it.get("desc", ""))):
+            if not isinstance(it, dict):
+                continue
+            if force or desc_is_junk(str(it.get("desc", ""))):
                 it["desc"] = f"今日热点：{it.get('title', '')}"[:120]
 
 
@@ -484,6 +487,7 @@ def build_feed():
     base_url = os.environ.get("LLM_BASE_URL") or "https://ark.cn-beijing.volces.com/api/v3"
     model = os.environ.get("LLM_MODEL") or "doubao-seed-2-1-lite-260915"
     diag = {}
+    enriched = None
     if key:
         # 只把清洗后的标题+摘要喂给模型，并对双命中条目加权排序，避免纯电商/纯 AI 抢占首条
         cross = [it for it in filtered if relevance_score(it) == 2]
@@ -503,11 +507,13 @@ def build_feed():
             if isinstance(enriched.get("contentMaterials"), list) and enriched["contentMaterials"]:
                 feed["contentMaterials"] = enriched["contentMaterials"][:5]
                 print("[llm] 已用 LLM 生成文案素材包")
-            fix_echoed_desc(feed)
         feed["llmStatus"] = {"enabled": True, "ok": bool(enriched), "error": diag.get("error", "")}
     else:
         feed["llmStatus"] = {"enabled": False, "ok": False, "error": "未配置 LLM_API_KEY"}
         print("[heuristic] 无 LLM Key，使用启发式文案素材")
+
+    # 无论 LLM 是否成功，都拦截照抄原文的摘要噪音；LLM 不可用时统一用标题兜底
+    fix_echoed_desc(feed, force=not bool(enriched))
 
     # 无论 LLM 是否成功，素材包为空时一律用启发式兜底，避免线上出现空栏目
     if not feed["contentMaterials"]:
