@@ -1,7 +1,7 @@
 // 电商+AI 内容库 · 每日动态 Feed（自动生成，勿手改）
-// 生成时间: 2026-11-12 18:33 (Asia/Shanghai)
+// 生成时间: 2026-11-13 03:44 (Asia/Shanghai)
 window.DAILY_FEED = {
-  "lastUpdate": "2026-11-12 18:33",
+  "lastUpdate": "2026-11-13 03:44",
   "hotTopics": [
     {
       "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
@@ -32,21 +32,14 @@ window.DAILY_FEED = {
       "source": "https://www.ifanr.com/1689097?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
-      "title": "有「眼力」，也有「洁癖」，戴森智能扫拖机器人改变了什么？",
-      "desc": "今日热点：有「眼力」，也有「洁癖」，戴森智能扫拖机器人改变了什么？",
+      "title": "森海塞尔 HDB 630 体验：把 Hi-Fi 音响，装进这副降噪耳机里",
+      "desc": "今日热点：森海塞尔 HDB 630 体验：把 Hi-Fi 音响，装进这副降噪耳机里",
       "tag": "综合",
       "time": "今日",
-      "source": "https://www.ifanr.com/1688755?utm_source=rss&utm_medium=rss&utm_campaign="
+      "source": "https://www.ifanr.com/1689209?utm_source=rss&utm_medium=rss&utm_campaign="
     }
   ],
   "aiTools": [
-    {
-      "title": "心言巴布「Bubbo 1」：一台机器人，如何成为家人",
-      "desc": "今日热点：心言巴布「Bubbo 1」：一台机器人，如何成为家人",
-      "tag": "AI",
-      "time": "今日",
-      "source": "http://www.geekpark.net/news/373399"
-    },
     {
       "title": "创业者做 Personal Agent，有没有一线生机？",
       "desc": "今日热点：创业者做 Personal Agent，有没有一线生机？",
@@ -74,6 +67,13 @@ window.DAILY_FEED = {
       "tag": "AI",
       "time": "今日",
       "source": "http://www.geekpark.net/news/373687"
+    },
+    {
+      "title": "一个人用得好 AI，为什么一家公司却用不好？",
+      "desc": "今日热点：一个人用得好 AI，为什么一家公司却用不好？",
+      "tag": "AI",
+      "time": "今日",
+      "source": "http://www.geekpark.net/news/373541"
     }
   ],
   "insights": [
@@ -169,6 +169,13 @@ window.DAILY_FEED = {
       "tag": "品牌",
       "time": "今日",
       "source": "https://www.ifanr.com/1689051?utm_source=rss&utm_medium=rss&utm_campaign="
+    },
+    {
+      "title": "26.99 万元起！腾势 N8 上市，内饰最美的比亚迪来了",
+      "desc": "今日热点：26.99 万元起！腾势 N8 上市，内饰最美的比亚迪来了",
+      "tag": "上市",
+      "time": "今日",
+      "source": "https://www.ifanr.com/1689232?utm_source=rss&utm_medium=rss&utm_campaign="
     }
   ],
   "contentMaterials": [
