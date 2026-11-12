@@ -269,6 +269,30 @@ def infer_topic_category(title):
     return "trend"
 
 
+JUNK_DESC_PATTERNS = ("作者｜", "编辑｜", "#欢迎关注", "更多精彩内容", "欢迎关注")
+JUNK_DESC_RE = re.compile(r"传说|众神|巴德尔|光明之神")
+
+
+def desc_is_junk(desc):
+    """判断摘要是否是照抄的原文噪音（版式文字、故事开头、公众号尾巴）。"""
+    if not desc:
+        return True
+    if any(p in desc for p in JUNK_DESC_PATTERNS):
+        return True
+    if JUNK_DESC_RE.search(desc):
+        return True
+    return False
+
+
+def fix_echoed_desc(feed):
+    """模型照抄原文时，把不合格摘要替换成标题，保证线上不出现正文噪音。"""
+    for k in ["hotTopics", "aiTools", "insights", "competitorNews", "topicIdeas"]:
+        items = feed.get(k) or []
+        for it in items:
+            if isinstance(it, dict) and desc_is_junk(str(it.get("desc", ""))):
+                it["desc"] = f"今日热点：{it.get('title', '')}"[:120]
+
+
 def is_ecom(text):
     t = text.lower()
     return any(k.lower() in t for k in ECOM_KEYWORDS)
@@ -479,6 +503,7 @@ def build_feed():
             if isinstance(enriched.get("contentMaterials"), list) and enriched["contentMaterials"]:
                 feed["contentMaterials"] = enriched["contentMaterials"][:5]
                 print("[llm] 已用 LLM 生成文案素材包")
+            fix_echoed_desc(feed)
         feed["llmStatus"] = {"enabled": True, "ok": bool(enriched), "error": diag.get("error", "")}
     else:
         feed["llmStatus"] = {"enabled": False, "ok": False, "error": "未配置 LLM_API_KEY"}
