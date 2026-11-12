@@ -279,7 +279,7 @@ LLM_SYSTEM_PROMPT = """你是电商+AI赛道的爆款内容操盘手。给你一
    - source: 来源热点标题
    - hook: 前3秒钩子（一句话制造悬念或反差）
    - angle: 切入角度（这个热点可以从什么视角讲）
-   - script: 3-5 个分镜的脚本大纲，每镜含「画面+口播」
+   - script: 3-5 个分镜的脚本大纲，每个分镜必须是对象，键名固定为 shot(镜头序号) / visual(画面描述) / voiceover(口播文案)
    - keyPoints: 2-3 条关键话术/金句
    - cta: 引导动作（关注/评论/进主页等）
    - category: photo/content/live/product/service/trend
@@ -407,8 +407,8 @@ def build_feed():
 
     # 文案素材包：热点 → 可直接用的钩子/脚本大纲/关键话术
     key = os.environ.get("LLM_API_KEY")
-    base_url = os.environ.get("LLM_BASE_URL", "https://ark.cn-beijing.volces.com/api/v3")
-    model = os.environ.get("LLM_MODEL", "doubao-seed-1.6")
+    base_url = os.environ.get("LLM_BASE_URL") or "https://ark.cn-beijing.volces.com/api/v3"
+    model = os.environ.get("LLM_MODEL") or "doubao-seed-2-1-lite-260915"
     if key:
         enriched = llm_enrich(filtered[:40], key, base_url, model)
         if enriched and isinstance(enriched, dict):

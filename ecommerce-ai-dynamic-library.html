@@ -8161,10 +8161,10 @@ function renderContentMaterials(materials) {
     const script = Array.isArray(m.script) ? m.script : [];
     const kp = Array.isArray(m.keyPoints) ? m.keyPoints : [];
     const cat = catLabel[m.category] || m.category || '综合';
-    const scriptHtml = script.map(s => {
-      const shot = s.shot || s.scene || '分镜';
-      const visual = s.visual || s画面 || '';
-      const vo = s.voiceover || s口播 || s.text || '';
+    const scriptHtml = script.map((s, si) => {
+      const shot = s.shot || s.scene || s['分镜'] || ('第' + (si + 1) + '镜');
+      const visual = s.visual || s['画面'] || '';
+      const vo = s.voiceover || s['口播'] || s.text || '';
       return `<div style="display:flex;gap:8px;padding:6px 0;border-bottom:1px solid var(--border);font-size:0.8rem;">
         <span style="color:var(--accent);font-weight:600;white-space:nowrap;">${shot}</span>
         <span style="color:var(--text-secondary);">${visual ? '【' + visual + '】' : ''}${vo}</span>
@@ -8191,7 +8191,12 @@ function renderContentMaterials(materials) {
 function copyMaterialText(idx) {
   const m = (window._contentMaterialsCache || [])[idx];
   if (!m) return;
-  const script = Array.isArray(m.script) ? m.script.map(s => `【${s.shot || '分镜'}】${s.visual ? '画面：' + s.visual + ' ' : ''}口播：${s.voiceover || s.text || ''}`).join('\n') : '';
+  const script = Array.isArray(m.script) ? m.script.map((s, si) => {
+    const shot = s.shot || s.scene || s['分镜'] || ('第' + (si + 1) + '镜');
+    const visual = s.visual || s['画面'] || '';
+    const vo = s.voiceover || s['口播'] || s.text || '';
+    return '【' + shot + '】' + (visual ? '画面：' + visual + ' ' : '') + '口播：' + vo;
+  }).join('\n') : '';
   const kp = Array.isArray(m.keyPoints) ? m.keyPoints.join('\n') : '';
   const text = `来源：${m.source}\n钩子：${m.hook}\n角度：${m.angle}\n脚本：\n${script}\n金句：\n${kp}\n引导：${m.cta}`;
   navigator.clipboard.writeText(text).then(() => {
