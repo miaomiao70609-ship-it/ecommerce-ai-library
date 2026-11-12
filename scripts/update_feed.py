@@ -294,34 +294,36 @@ def llm_enrich(items, key, base_url, model, diag=None):
         "temperature": 0.7,
         "messages": [
             {"role": "system", "content": LLM_SYSTEM_PROMPT},
-            {"role": "user", "content": json.dumps(items[:40], ensure_ascii=False)},
+            {"role": "user", "content": json.dumps(items[:25], ensure_ascii=False)},
         ],
     }
-    try:
-        req = urllib.request.Request(
-            base_url.rstrip("/") + "/chat/completions",
-            data=json.dumps(payload).encode("utf-8"),
-            headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
-            method="POST",
-        )
-        with urllib.request.urlopen(req, timeout=120) as r:
-            resp = json.loads(r.read().decode("utf-8"))
-        content = resp["choices"][0]["message"]["content"]
-        # 提取 JSON（兼容 ```json ... ``` 包裹）
-        m = re.search(r"\{[\s\S]*\}", content)
-        if not m:
-            print("[llm] 响应中未找到 JSON")
-            if diag is not None:
-                diag["error"] = "响应中未找到 JSON，返回内容前 80 字：" + content[:80]
-            return None
-        result = json.loads(m.group(0))
-        print("[llm] 文案素材包生成成功")
-        return result
-    except Exception as e:
-        if diag is not None:
-            diag["error"] = f"{type(e).__name__}: {e}"[:220]
-        print(f"[llm] 调用失败，使用启发式：{e}")
-        return None
+    last_err = ""
+    for attempt in range(1, 3):
+        try:
+            req = urllib.request.Request(
+                base_url.rstrip("/") + "/chat/completions",
+                data=json.dumps(payload).encode("utf-8"),
+                headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+                method="POST",
+            )
+            with urllib.request.urlopen(req, timeout=300) as r:
+                resp = json.loads(r.read().decode("utf-8"))
+            content = resp["choices"][0]["message"]["content"]
+            # 提取 JSON（兼容 ```json ... ``` 包裹）
+            m = re.search(r"\{[\s\S]*\}", content)
+            if not m:
+                last_err = "响应中未找到 JSON，返回内容前 80 字：" + content[:80]
+                print(f"[llm] 第{attempt}次：{last_err}")
+                continue
+            result = json.loads(m.group(0))
+            print(f"[llm] 第{attempt}次调用成功，文案素材包生成成功")
+            return result
+        except Exception as e:
+            last_err = f"{type(e).__name__}: {e}"
+            print(f"[llm] 第{attempt}次调用失败：{last_err}")
+    if diag is not None:
+        diag["error"] = last_err[:220]
+    return None
 
 
 def heuristic_content_materials(items):
