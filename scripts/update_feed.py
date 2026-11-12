@@ -286,7 +286,7 @@ LLM_SYSTEM_PROMPT = """你是电商+AI赛道的爆款内容操盘手。给你一
 输出必须是纯 JSON，不要 Markdown 代码块。"""
 
 
-def llm_enrich(items, key, base_url, model):
+def llm_enrich(items, key, base_url, model, diag=None):
     if not key:
         return None
     payload = {
@@ -311,11 +311,15 @@ def llm_enrich(items, key, base_url, model):
         m = re.search(r"\{[\s\S]*\}", content)
         if not m:
             print("[llm] 响应中未找到 JSON")
+            if diag is not None:
+                diag["error"] = "响应中未找到 JSON，返回内容前 80 字：" + content[:80]
             return None
         result = json.loads(m.group(0))
         print("[llm] 文案素材包生成成功")
         return result
     except Exception as e:
+        if diag is not None:
+            diag["error"] = f"{type(e).__name__}: {e}"[:220]
         print(f"[llm] 调用失败，使用启发式：{e}")
         return None
 
@@ -409,8 +413,9 @@ def build_feed():
     key = os.environ.get("LLM_API_KEY")
     base_url = os.environ.get("LLM_BASE_URL") or "https://ark.cn-beijing.volces.com/api/v3"
     model = os.environ.get("LLM_MODEL") or "doubao-seed-2-1-lite-260915"
+    diag = {}
     if key:
-        enriched = llm_enrich(filtered[:40], key, base_url, model)
+        enriched = llm_enrich(filtered[:40], key, base_url, model, diag)
         if enriched and isinstance(enriched, dict):
             for k in ["hotTopics", "aiTools", "insights", "competitorNews"]:
                 if isinstance(enriched.get(k), list) and enriched[k]:
@@ -420,12 +425,15 @@ def build_feed():
             if isinstance(enriched.get("contentMaterials"), list) and enriched["contentMaterials"]:
                 feed["contentMaterials"] = enriched["contentMaterials"][:5]
                 print("[llm] 已用 LLM 生成文案素材包")
-            else:
-                feed["contentMaterials"] = heuristic_content_materials(topic_pool)
-                print("[llm] LLM 未返回 contentMaterials，使用启发式素材")
+        feed["llmStatus"] = {"enabled": True, "ok": bool(enriched), "error": diag.get("error", "")}
     else:
-        feed["contentMaterials"] = heuristic_content_materials(topic_pool)
+        feed["llmStatus"] = {"enabled": False, "ok": False, "error": "未配置 LLM_API_KEY"}
         print("[heuristic] 无 LLM Key，使用启发式文案素材")
+
+    # 无论 LLM 是否成功，素材包为空时一律用启发式兜底，避免线上出现空栏目
+    if not feed["contentMaterials"]:
+        feed["contentMaterials"] = heuristic_content_materials(topic_pool)
+        print("[heuristic] 素材包为空，已用启发式兜底")
 
     return feed
 
