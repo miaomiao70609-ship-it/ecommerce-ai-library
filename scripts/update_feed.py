@@ -67,13 +67,19 @@ BILIBILI_SOURCES = [
 PLATFORM_QUOTA = {"douyin": 15, "xiaohongshu": 15, "weibo": 10, "bilibili": 20}
 
 # 电商 + AI 关键词过滤
-ECOM_AI_KEYWORDS = [
-    "电商", "直播", "带货", "商家", "品牌", "平台", "成交", "GMV", "转化",
+ECOM_KEYWORDS = [
+    "电商", "直播", "带货", "商家", "品牌", "成交", "GMV", "转化",
     "抖音", "快手", "小红书", "淘宝", "天猫", "京东", "拼多多", "美团", "视频号",
     "双11", "618", "大促", "上新", "类目", "流量", "投放", "ROI", "达人", "主播",
+    "店铺", "选品", "退货", "客单", "私域", "复购",
+]
+AI_KEYWORDS = [
     "AI", "大模型", "GPT", "豆包", "文心", "通义", "可灵", "Sora", "Midjourney",
     "Agent", "智能体", "AIGC", "生成式", "多模态", "数字人", "虚拟主播",
-    "内容", "短视频", "图文", "种草", "社区", "用户", "数据", "报告",
+    "算法", "自动化", "提示词", "模型",
+]
+ECOM_AI_KEYWORDS = ECOM_KEYWORDS + AI_KEYWORDS + [
+    "平台", "内容", "短视频", "图文", "种草", "社区", "用户", "数据", "报告",
 ]
 
 CATEGORY_KEYWORDS = {
@@ -263,6 +269,38 @@ def infer_topic_category(title):
     return "trend"
 
 
+def is_ecom(text):
+    t = text.lower()
+    return any(k.lower() in t for k in ECOM_KEYWORDS)
+
+
+def is_ai(text):
+    t = text.lower()
+    return any(k.lower() in t for k in AI_KEYWORDS)
+
+
+def relevance_score(item):
+    """2 = 电商与 AI 双命中，1 = 仅电商，0 = 其他。用于让素材包优先落在交叉赛道。"""
+    text = item.get("title", "") + " " + item.get("desc", "")
+    if is_ecom(text) and is_ai(text):
+        return 2
+    return 1 if is_ecom(text) else 0
+
+
+def clean_desc(text, n=110):
+    """清洗 RSS 正文：去掉作者/编辑等版式噪音，取首句并限长。"""
+    text = clean_html(text or "")
+    text = re.sub(r"(作者|编辑|来源|记者)\s*[｜|]\s*\S*", "", text)
+    text = re.sub(r"\s+", " ", text).strip(" ··-—、")
+    # 取第一句完整表达
+    m = re.match(r"[^。！？]{20,}。[^。！？]*[。！？]?", text)
+    if m:
+        text = m.group(0)
+    if len(text) > n:
+        text = text[:n].rstrip("，。、；：,.;: ") + "…"
+    return text
+
+
 def shorten(text, n=120):
     text = clean_html(text)
     if len(text) <= n:
@@ -275,7 +313,9 @@ LLM_SYSTEM_PROMPT = """你是电商+AI赛道的爆款内容操盘手。给你一
 1. classified: 每条新闻分类到 hotTopics(平台热点)/aiTools(AI工具)/insights(运营洞察)/competitorNews(竞品动态)，
    每条含 title(原标题)、desc(≤120字摘要，保留数字与来源)、tag(关键词)。
 2. topicIdeas: 5 个短视频选题，含 title、desc、tag、category(photo/content/live/product/service/trend)。
-3. contentMaterials: 从热点中挑 5 个最适合做内容的，每个生成可直接用的文案素材包：
+3. contentMaterials: 从热点中挑 5 个最适合做内容的，每个生成可直接用的文案素材包。
+   硬性要求：素材必须落在「电商 × AI」交叉赛道——讲清楚商家/运营者如何用 AI 工具或自动化提升效率、降低成本、放大流量。
+   优先选同时涉及电商与 AI 的热点；若热点只涉及电商规则或平台玩法，必须从 AI 工具/自动化视角给出可落地的做法，禁止写成纯平台资讯。
    - source: 来源热点标题
    - hook: 前3秒钩子（一句话制造悬念或反差）
    - angle: 切入角度（这个热点可以从什么视角讲）
@@ -383,7 +423,7 @@ def build_feed():
         bucket, tag = classify(it["title"], it.get("desc", ""))
         buckets[bucket].append({
             "title": it["title"],
-            "desc": shorten(it.get("desc", ""), 120) or it["title"],
+            "desc": clean_desc(it.get("desc", "")) or it["title"],
             "tag": tag,
             "time": "今日",
             "source": it.get("link", ""),
@@ -396,7 +436,9 @@ def build_feed():
         feed[k] = buckets[k][:5]
 
     # 选题推荐：从 hotTopics + insights 顶部生成
+    # 素材优先落在「电商 × AI」交叉条目，其次纯电商，避免出现与 AI 无关的钩子
     topic_pool = buckets["hotTopics"] + buckets["insights"]
+    topic_pool.sort(key=relevance_score, reverse=True)
     topic_ideas = []
     for it in topic_pool[:8]:
         title = it["title"]
@@ -417,7 +459,8 @@ def build_feed():
     model = os.environ.get("LLM_MODEL") or "doubao-seed-2-1-lite-260915"
     diag = {}
     if key:
-        enriched = llm_enrich(filtered[:40], key, base_url, model, diag)
+        llm_input = sorted(filtered, key=relevance_score, reverse=True)[:25]
+        enriched = llm_enrich(llm_input, key, base_url, model, diag)
         if enriched and isinstance(enriched, dict):
             for k in ["hotTopics", "aiTools", "insights", "competitorNews"]:
                 if isinstance(enriched.get(k), list) and enriched[k]:
