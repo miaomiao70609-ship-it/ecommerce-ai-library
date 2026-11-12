@@ -1,6 +1,8 @@
 name: update-feed
 
 on:
+  push:
+    branches: [main]
   schedule:
     # 每天 08:00 与 20:00（北京时间 = UTC 00:00 / 12:00）
     - cron: "0 0,12 * * *"
