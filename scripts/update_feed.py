@@ -459,7 +459,14 @@ def build_feed():
     model = os.environ.get("LLM_MODEL") or "doubao-seed-2-1-lite-260915"
     diag = {}
     if key:
-        llm_input = sorted(filtered, key=relevance_score, reverse=True)[:25]
+        # 只把清洗后的标题+摘要喂给模型，并对双命中条目加权排序，避免纯电商/纯 AI 抢占首条
+        cross = [it for it in filtered if relevance_score(it) == 2]
+        base = cross if len(cross) >= 6 else filtered
+        base = sorted(base, key=relevance_score, reverse=True)[:25]
+        llm_input = [
+            {"title": it["title"], "desc": clean_desc(it.get("desc", "")), "link": it.get("link", "")}
+            for it in base
+        ]
         enriched = llm_enrich(llm_input, key, base_url, model, diag)
         if enriched and isinstance(enriched, dict):
             for k in ["hotTopics", "aiTools", "insights", "competitorNews"]:
