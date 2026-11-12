@@ -312,6 +312,8 @@ def shorten(text, n=120):
 LLM_SYSTEM_PROMPT = """你是电商+AI赛道的爆款内容操盘手。给你一批当天热点新闻，输出 JSON，包含：
 1. classified: 每条新闻分类到 hotTopics(平台热点)/aiTools(AI工具)/insights(运营洞察)/competitorNews(竞品动态)，
    每条含 title(原标题)、desc(≤120字摘要，保留数字与来源)、tag(关键词)。
+   desc 硬性约束：必须是你自己重新概括的摘要，禁止与给定原文连续 10 字以上相同，禁止照抄开头段落、禁止保留「作者/编辑/来源」等版式文字。
+   摘要要写清楚「谁做了什么、带来什么变化、对电商从业者意味着什么」。
 2. topicIdeas: 5 个短视频选题，含 title、desc、tag、category(photo/content/live/product/service/trend)。
 3. contentMaterials: 从热点中挑 5 个最适合做内容的，每个生成可直接用的文案素材包。
    硬性要求：素材必须落在「电商 × AI」交叉赛道——讲清楚商家/运营者如何用 AI 工具或自动化提升效率、降低成本、放大流量。
