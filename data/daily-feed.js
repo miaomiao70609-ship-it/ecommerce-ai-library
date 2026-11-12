@@ -1,7 +1,7 @@
 // 电商+AI 内容库 · 每日动态 Feed（自动生成，勿手改）
-// 生成时间: 2026-11-12 18:32 (Asia/Shanghai)
+// 生成时间: 2026-11-12 18:33 (Asia/Shanghai)
 window.DAILY_FEED = {
-  "lastUpdate": "2026-11-12 18:32",
+  "lastUpdate": "2026-11-12 18:33",
   "hotTopics": [
     {
       "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
@@ -314,8 +314,8 @@ window.DAILY_FEED = {
     }
   ],
   "llmStatus": {
-    "enabled": false,
+    "enabled": true,
     "ok": false,
-    "error": "未配置 LLM_API_KEY"
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
   }
 };

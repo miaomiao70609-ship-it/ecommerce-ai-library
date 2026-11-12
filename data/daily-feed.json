@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-11-12 18:32",
+  "lastUpdate": "2026-11-12 18:33",
   "hotTopics": [
     {
       "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
@@ -312,8 +312,8 @@
     }
   ],
   "llmStatus": {
-    "enabled": false,
+    "enabled": true,
     "ok": false,
-    "error": "未配置 LLM_API_KEY"
+    "error": "HTTPError: HTTP Error 429: Too Many Requests"
   }
 }
