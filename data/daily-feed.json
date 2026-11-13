@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-11-13 14:00",
+  "lastUpdate": "2026-11-14 03:26",
   "hotTopics": [
     {
       "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
@@ -7,13 +7,6 @@
       "tag": "大促",
       "time": "今日",
       "source": "http://www.geekpark.net/news/373760"
-    },
-    {
-      "title": "早报｜华为小折叠电脑MateBook Fold S亮相/《GTA VI》开启预载，全平台目标30fps/董明珠回应格力业绩下滑：铜价上涨，格力将继续用铜",
-      "desc": "今日热点：早报｜华为小折叠电脑MateBook Fold S亮相/《GTA VI》开启预载，全平台目标30fps/董明珠回应格力业绩下滑：铜价上涨，格力将继续用铜",
-      "tag": "平台",
-      "time": "今日",
-      "source": "https://www.ifanr.com/1688852?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
       "title": "联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有",
@@ -28,6 +21,13 @@
       "tag": "综合",
       "time": "今日",
       "source": "https://www.ifanr.com/1689097?utm_source=rss&utm_medium=rss&utm_campaign="
+    },
+    {
+      "title": "iPhone 20 爆料汇总：一整块玻璃，藏着苹果下一个十年",
+      "desc": "今日热点：iPhone 20 爆料汇总：一整块玻璃，藏着苹果下一个十年",
+      "tag": "综合",
+      "time": "今日",
+      "source": "https://www.ifanr.com/1689409?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
       "title": "森海塞尔 HDB 630 体验：把 Hi-Fi 音响，装进这副降噪耳机里",
@@ -121,9 +121,9 @@
       "time": "今日推荐"
     },
     {
-      "title": "视频号的逆袭路，绿泡泡走不了",
-      "desc": "今日热点：视频号的逆袭路，绿泡泡走不了",
-      "tag": "综合",
+      "title": "双11的时代结束了",
+      "desc": "今日热点：双11的时代结束了",
+      "tag": "双11",
       "type": "topic",
       "category": "trend",
       "time": "今日推荐"
@@ -145,9 +145,9 @@
       "time": "今日推荐"
     },
     {
-      "title": "早报｜华为小折叠电脑MateBook Fold S亮相/《GTA VI》开启预载，全平台目标30fps/董明珠回应格力业绩下滑：铜价上涨，格力将继续用铜",
-      "desc": "今日热点：早报｜华为小折叠电脑MateBook Fold S亮相/《GTA VI》开启预载，全平台目标30fps/董明珠回应格力业绩下滑：铜价上涨，格力将继续用铜",
-      "tag": "平台",
+      "title": "联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有",
+      "desc": "今日热点：联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有",
+      "tag": "综合",
       "type": "topic",
       "category": "trend",
       "time": "今日推荐"
@@ -174,6 +174,13 @@
       "tag": "品牌",
       "time": "今日",
       "source": "https://www.ifanr.com/1689051?utm_source=rss&utm_medium=rss&utm_campaign="
+    },
+    {
+      "title": "余承东公布华为问界新合作模式！新 M8 同步上市，起售价 37.98 万元",
+      "desc": "今日热点：余承东公布华为问界新合作模式！新 M8 同步上市，起售价 37.98 万元",
+      "tag": "上市",
+      "time": "今日",
+      "source": "https://www.ifanr.com/1689432?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
       "title": "26.99 万元起！腾势 N8 上市，内饰最美的比亚迪来了",
@@ -213,14 +220,14 @@
       "category": "photo"
     },
     {
-      "source": "视频号的逆袭路，绿泡泡走不了",
-      "hook": "你知道吗？视频号的逆袭路，绿泡泡走不了，背后藏着电商人必须看懂的信号。",
+      "source": "双11的时代结束了",
+      "hook": "你知道吗？双11的时代结束了，背后藏着电商人必须看懂的信号。",
       "angle": "从商家实战角度拆解这个热点对运营的影响",
       "script": [
         {
           "shot": "开场",
           "visual": "热点数据截图",
-          "voiceover": "今天聊视频号的逆袭路，绿泡泡走不了，这事跟每个做电商的都有关系。"
+          "voiceover": "今天聊双11的时代结束了，这事跟每个做电商的都有关系。"
         },
         {
           "shot": "拆解",
@@ -234,7 +241,7 @@
         }
       ],
       "keyPoints": [
-        "核心：视频号的逆袭路，绿泡泡走不了",
+        "核心：双11的时代结束了",
         "趋势：平台正在加码这个方向"
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
@@ -297,14 +304,14 @@
       "category": "photo"
     },
     {
-      "source": "早报｜华为小折叠电脑MateBook Fold S亮相/《GTA VI》开启预载，全平台目标30fps/董明珠回应格力业绩下滑：铜价上涨，格力将继续用铜",
-      "hook": "你知道吗？早报｜华为小折叠电脑MateBook Fold S亮相/《GTA VI》开启预载，全平台目标30fps/董明珠回应格力业绩下滑：铜价上涨，格力将继续用铜，背后藏着电商人必须看懂的信号。",
+      "source": "联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有",
+      "hook": "你知道吗？联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有，背后藏着电商人必须看懂的信号。",
       "angle": "从商家实战角度拆解这个热点对运营的影响",
       "script": [
         {
           "shot": "开场",
           "visual": "热点数据截图",
-          "voiceover": "今天聊早报｜华为小折叠电脑MateBook Fold S亮相/《GTA VI》开启预载，全平台目标30fps/董明珠回应格力业绩下滑：铜价上涨，格力将继续用铜，这事跟每个做电商的都有关系。"
+          "voiceover": "今天聊联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有，这事跟每个做电商的都有关系。"
         },
         {
           "shot": "拆解",
@@ -318,7 +325,7 @@
         }
       ],
       "keyPoints": [
-        "核心：早报｜华为小折叠电脑MateBook Fold S亮相/《GTA VI》开启预载，全平台目标30fps/董明珠回应格力业绩下滑：铜价上涨，格力将继续用铜",
+        "核心：联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有",
         "趋势：平台正在加码这个方向"
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
