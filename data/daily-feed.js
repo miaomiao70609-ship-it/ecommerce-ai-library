@@ -1,7 +1,7 @@
 // 电商+AI 内容库 · 每日动态 Feed（自动生成，勿手改）
-// 生成时间: 2026-11-13 03:44 (Asia/Shanghai)
+// 生成时间: 2026-11-13 14:00 (Asia/Shanghai)
 window.DAILY_FEED = {
-  "lastUpdate": "2026-11-13 03:44",
+  "lastUpdate": "2026-11-13 14:00",
   "hotTopics": [
     {
       "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
@@ -62,18 +62,18 @@ window.DAILY_FEED = {
       "source": "http://www.geekpark.net/news/373816"
     },
     {
+      "title": "李彦宏定义 AI 下一个十年，智能组织是「新厂房」",
+      "desc": "今日热点：李彦宏定义 AI 下一个十年，智能组织是「新厂房」",
+      "tag": "AI",
+      "time": "今日",
+      "source": "http://www.geekpark.net/news/373937"
+    },
+    {
       "title": "黄仁勋承认「婚外情」，英伟达启动调查；ChatGPT 突现封号风波，200 美元 Pro 用户也遭殃；腾讯姚顺雨谈「AI 公司护城河」：在产品层，而不是模型层",
       "desc": "今日热点：黄仁勋承认「婚外情」，英伟达启动调查；ChatGPT 突现封号风波，200 美元 Pro 用户也遭殃；腾讯姚顺雨谈「AI 公司护城河」：在产品层，而不是模型层",
       "tag": "AI",
       "time": "今日",
       "source": "http://www.geekpark.net/news/373687"
-    },
-    {
-      "title": "一个人用得好 AI，为什么一家公司却用不好？",
-      "desc": "今日热点：一个人用得好 AI，为什么一家公司却用不好？",
-      "tag": "AI",
-      "time": "今日",
-      "source": "http://www.geekpark.net/news/373541"
     }
   ],
   "insights": [
@@ -99,18 +99,18 @@ window.DAILY_FEED = {
       "source": "http://www.geekpark.net/news/373715"
     },
     {
+      "title": "黄仁勋宣布辞职，特朗普：库克适合接任；微信「看一看」测试短剧入口；《GTA 6》还没发售就狂卖近千万份｜极客早知道",
+      "desc": "今日热点：黄仁勋宣布辞职，特朗普：库克适合接任；微信「看一看」测试短剧入口；《GTA 6》还没发售就狂卖近千万份｜极客早知道",
+      "tag": "数据",
+      "time": "今日",
+      "source": "http://www.geekpark.net/news/373907"
+    },
+    {
       "title": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
       "desc": "今日热点：体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
       "tag": "用户",
       "time": "今日",
       "source": "http://www.geekpark.net/news/373860"
-    },
-    {
-      "title": "「全球最速」之后，比亚迪仰望推出了一台「全球最豪」的新车",
-      "desc": "今日热点：「全球最速」之后，比亚迪仰望推出了一台「全球最豪」的新车",
-      "tag": "数据",
-      "time": "今日",
-      "source": "http://www.geekpark.net/news/373647"
     }
   ],
   "topicIdeas": [
@@ -120,6 +120,14 @@ window.DAILY_FEED = {
       "tag": "数据",
       "type": "topic",
       "category": "photo",
+      "time": "今日推荐"
+    },
+    {
+      "title": "视频号的逆袭路，绿泡泡走不了",
+      "desc": "今日热点：视频号的逆袭路，绿泡泡走不了",
+      "tag": "综合",
+      "type": "topic",
+      "category": "trend",
       "time": "今日推荐"
     },
     {
@@ -145,14 +153,6 @@ window.DAILY_FEED = {
       "type": "topic",
       "category": "trend",
       "time": "今日推荐"
-    },
-    {
-      "title": "联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有",
-      "desc": "今日热点：联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有",
-      "tag": "综合",
-      "type": "topic",
-      "category": "trend",
-      "time": "今日推荐"
     }
   ],
   "competitorNews": [
@@ -162,6 +162,13 @@ window.DAILY_FEED = {
       "tag": "上市",
       "time": "今日",
       "source": "http://www.geekpark.net/news/373796"
+    },
+    {
+      "title": "AI 录音硬件卖的是时间差，窗口可能只剩半年",
+      "desc": "今日热点：AI 录音硬件卖的是时间差，窗口可能只剩半年",
+      "tag": "字节",
+      "time": "今日",
+      "source": "http://www.geekpark.net/news/373946"
     },
     {
       "title": "早报｜苹果支持社区将关停/曝英伟达董事会考虑罢免黄仁勋/余承东官宣华为子品牌OSTA星芒",
@@ -206,6 +213,34 @@ window.DAILY_FEED = {
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
       "category": "photo"
+    },
+    {
+      "source": "视频号的逆袭路，绿泡泡走不了",
+      "hook": "你知道吗？视频号的逆袭路，绿泡泡走不了，背后藏着电商人必须看懂的信号。",
+      "angle": "从商家实战角度拆解这个热点对运营的影响",
+      "script": [
+        {
+          "shot": "开场",
+          "visual": "热点数据截图",
+          "voiceover": "今天聊视频号的逆袭路，绿泡泡走不了，这事跟每个做电商的都有关系。"
+        },
+        {
+          "shot": "拆解",
+          "visual": "要点列表",
+          "voiceover": "三个关键点你必须知道……"
+        },
+        {
+          "shot": "落地",
+          "visual": "操作步骤",
+          "voiceover": "具体怎么用，我给你拆成三步走。"
+        }
+      ],
+      "keyPoints": [
+        "核心：视频号的逆袭路，绿泡泡走不了",
+        "趋势：平台正在加码这个方向"
+      ],
+      "cta": "关注我，每天更新电商+AI的实战干货。",
+      "category": "trend"
     },
     {
       "source": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
@@ -286,34 +321,6 @@ window.DAILY_FEED = {
       ],
       "keyPoints": [
         "核心：早报｜华为小折叠电脑MateBook Fold S亮相/《GTA VI》开启预载，全平台目标30fps/董明珠回应格力业绩下滑：铜价上涨，格力将继续用铜",
-        "趋势：平台正在加码这个方向"
-      ],
-      "cta": "关注我，每天更新电商+AI的实战干货。",
-      "category": "trend"
-    },
-    {
-      "source": "联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有",
-      "hook": "你知道吗？联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有，背后藏着电商人必须看懂的信号。",
-      "angle": "从商家实战角度拆解这个热点对运营的影响",
-      "script": [
-        {
-          "shot": "开场",
-          "visual": "热点数据截图",
-          "voiceover": "今天聊联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有，这事跟每个做电商的都有关系。"
-        },
-        {
-          "shot": "拆解",
-          "visual": "要点列表",
-          "voiceover": "三个关键点你必须知道……"
-        },
-        {
-          "shot": "落地",
-          "visual": "操作步骤",
-          "voiceover": "具体怎么用，我给你拆成三步走。"
-        }
-      ],
-      "keyPoints": [
-        "核心：联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有",
         "趋势：平台正在加码这个方向"
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
