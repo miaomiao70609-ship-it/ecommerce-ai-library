@@ -1,7 +1,7 @@
 // 电商+AI 内容库 · 每日动态 Feed（自动生成，勿手改）
-// 生成时间: 2026-11-15 13:51 (Asia/Shanghai)
+// 生成时间: 2026-11-16 02:41 (Asia/Shanghai)
 window.DAILY_FEED = {
-  "lastUpdate": "2026-11-15 13:51",
+  "lastUpdate": "2026-11-16 02:41",
   "hotTopics": [
     {
       "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
@@ -9,6 +9,13 @@ window.DAILY_FEED = {
       "tag": "大促",
       "time": "今日",
       "source": "http://www.geekpark.net/news/373760"
+    },
+    {
+      "title": "【BLG vs GEN】德云色解说：新王登基！等待一生的巨浪！（2026全球总决赛）",
+      "desc": "今日热点：【BLG vs GEN】德云色解说：新王登基！等待一生的巨浪！（2026全球总决赛）",
+      "tag": "直播",
+      "time": "今日",
+      "source": ""
     },
     {
       "title": "联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有",
@@ -30,13 +37,6 @@ window.DAILY_FEED = {
       "tag": "综合",
       "time": "今日",
       "source": "https://www.ifanr.com/1689409?utm_source=rss&utm_medium=rss&utm_campaign="
-    },
-    {
-      "title": "森海塞尔 HDB 630 体验：把 Hi-Fi 音响，装进这副降噪耳机里",
-      "desc": "今日热点：森海塞尔 HDB 630 体验：把 Hi-Fi 音响，装进这副降噪耳机里",
-      "tag": "综合",
-      "time": "今日",
-      "source": "https://www.ifanr.com/1689209?utm_source=rss&utm_medium=rss&utm_campaign="
     }
   ],
   "aiTools": [
@@ -123,6 +123,14 @@ window.DAILY_FEED = {
       "time": "今日推荐"
     },
     {
+      "title": "【BLG vs GEN】德云色解说：新王登基！等待一生的巨浪！（2026全球总决赛）",
+      "desc": "今日热点：【BLG vs GEN】德云色解说：新王登基！等待一生的巨浪！（2026全球总决赛）",
+      "tag": "直播",
+      "type": "topic",
+      "category": "trend",
+      "time": "今日推荐"
+    },
+    {
       "title": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
       "desc": "今日热点：体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
       "tag": "用户",
@@ -141,14 +149,6 @@ window.DAILY_FEED = {
     {
       "title": "联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有",
       "desc": "今日热点：联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有",
-      "tag": "综合",
-      "type": "topic",
-      "category": "trend",
-      "time": "今日推荐"
-    },
-    {
-      "title": "折叠屏手机的转身｜明日后视镜",
-      "desc": "今日热点：折叠屏手机的转身｜明日后视镜",
       "tag": "综合",
       "type": "topic",
       "category": "trend",
@@ -220,6 +220,34 @@ window.DAILY_FEED = {
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
       "category": "photo"
+    },
+    {
+      "source": "【BLG vs GEN】德云色解说：新王登基！等待一生的巨浪！（2026全球总决赛）",
+      "hook": "你知道吗？【BLG vs GEN】德云色解说：新王登基！等待一生的巨浪！（2026全球总决赛），背后藏着电商人必须看懂的信号。",
+      "angle": "从商家实战角度拆解这个热点对运营的影响",
+      "script": [
+        {
+          "shot": "开场",
+          "visual": "热点数据截图",
+          "voiceover": "今天聊【BLG vs GEN】德云色解说：新王登基！等待一生的巨浪！（2026全球总决赛），这事跟每个做电商的都有关系。"
+        },
+        {
+          "shot": "拆解",
+          "visual": "要点列表",
+          "voiceover": "三个关键点你必须知道……"
+        },
+        {
+          "shot": "落地",
+          "visual": "操作步骤",
+          "voiceover": "具体怎么用，我给你拆成三步走。"
+        }
+      ],
+      "keyPoints": [
+        "核心：【BLG vs GEN】德云色解说：新王登基！等待一生的巨浪！（2026全球总决赛）",
+        "趋势：平台正在加码这个方向"
+      ],
+      "cta": "关注我，每天更新电商+AI的实战干货。",
+      "category": "trend"
     },
     {
       "source": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
@@ -300,34 +328,6 @@ window.DAILY_FEED = {
       ],
       "keyPoints": [
         "核心：联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有",
-        "趋势：平台正在加码这个方向"
-      ],
-      "cta": "关注我，每天更新电商+AI的实战干货。",
-      "category": "trend"
-    },
-    {
-      "source": "折叠屏手机的转身｜明日后视镜",
-      "hook": "你知道吗？折叠屏手机的转身｜明日后视镜，背后藏着电商人必须看懂的信号。",
-      "angle": "从商家实战角度拆解这个热点对运营的影响",
-      "script": [
-        {
-          "shot": "开场",
-          "visual": "热点数据截图",
-          "voiceover": "今天聊折叠屏手机的转身｜明日后视镜，这事跟每个做电商的都有关系。"
-        },
-        {
-          "shot": "拆解",
-          "visual": "要点列表",
-          "voiceover": "三个关键点你必须知道……"
-        },
-        {
-          "shot": "落地",
-          "visual": "操作步骤",
-          "voiceover": "具体怎么用，我给你拆成三步走。"
-        }
-      ],
-      "keyPoints": [
-        "核心：折叠屏手机的转身｜明日后视镜",
         "趋势：平台正在加码这个方向"
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
