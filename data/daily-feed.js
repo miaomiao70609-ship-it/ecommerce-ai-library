@@ -1,7 +1,7 @@
 // 电商+AI 内容库 · 每日动态 Feed（自动生成，勿手改）
-// 生成时间: 2026-11-16 02:41 (Asia/Shanghai)
+// 生成时间: 2026-11-16 13:49 (Asia/Shanghai)
 window.DAILY_FEED = {
-  "lastUpdate": "2026-11-16 02:41",
+  "lastUpdate": "2026-11-16 13:49",
   "hotTopics": [
     {
       "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
@@ -11,25 +11,18 @@ window.DAILY_FEED = {
       "source": "http://www.geekpark.net/news/373760"
     },
     {
-      "title": "【BLG vs GEN】德云色解说：新王登基！等待一生的巨浪！（2026全球总决赛）",
-      "desc": "今日热点：【BLG vs GEN】德云色解说：新王登基！等待一生的巨浪！（2026全球总决赛）",
-      "tag": "直播",
-      "time": "今日",
-      "source": ""
-    },
-    {
-      "title": "联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有",
-      "desc": "今日热点：联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有",
+      "title": "早报｜黄仁勋考虑重返英伟达担任CEO/曝苹果智能眼镜明年6月发布/微软全球大宕机结束，持续超30小时",
+      "desc": "今日热点：早报｜黄仁勋考虑重返英伟达担任CEO/曝苹果智能眼镜明年6月发布/微软全球大宕机结束，持续超30小时",
       "tag": "综合",
       "time": "今日",
-      "source": "https://www.ifanr.com/1689128?utm_source=rss&utm_medium=rss&utm_campaign="
+      "source": "https://www.ifanr.com/1689521?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
-      "title": "折叠屏手机的转身｜明日后视镜",
-      "desc": "今日热点：折叠屏手机的转身｜明日后视镜",
-      "tag": "综合",
+      "title": "退货这件苦差事，机器人不只搬箱子了",
+      "desc": "今日热点：退货这件苦差事，机器人不只搬箱子了",
+      "tag": "双11",
       "time": "今日",
-      "source": "https://www.ifanr.com/1689097?utm_source=rss&utm_medium=rss&utm_campaign="
+      "source": "https://www.tmtpost.com/8206264.html"
     },
     {
       "title": "iPhone 20 爆料汇总：一整块玻璃，藏着苹果下一个十年",
@@ -37,6 +30,13 @@ window.DAILY_FEED = {
       "tag": "综合",
       "time": "今日",
       "source": "https://www.ifanr.com/1689409?utm_source=rss&utm_medium=rss&utm_campaign="
+    },
+    {
+      "title": "原厂宽体+碳纤大尾翼！用 13.38 万，买到一辆「领克 03+」",
+      "desc": "今日热点：原厂宽体+碳纤大尾翼！用 13.38 万，买到一辆「领克 03+」",
+      "tag": "综合",
+      "time": "今日",
+      "source": "https://www.ifanr.com/1689570?utm_source=rss&utm_medium=rss&utm_campaign="
     }
   ],
   "aiTools": [
@@ -106,28 +106,28 @@ window.DAILY_FEED = {
       "source": "http://www.geekpark.net/news/373715"
     },
     {
-      "title": "黄仁勋宣布辞职，特朗普：库克适合接任；微信「看一看」测试短剧入口；《GTA 6》还没发售就狂卖近千万份｜极客早知道",
-      "desc": "今日热点：黄仁勋宣布辞职，特朗普：库克适合接任；微信「看一看」测试短剧入口；《GTA 6》还没发售就狂卖近千万份｜极客早知道",
-      "tag": "数据",
+      "title": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
+      "desc": "今日热点：体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
+      "tag": "用户",
       "time": "今日",
-      "source": "http://www.geekpark.net/news/373907"
+      "source": "http://www.geekpark.net/news/373860"
     }
   ],
   "topicIdeas": [
+    {
+      "title": "退货这件苦差事，机器人不只搬箱子了",
+      "desc": "今日热点：退货这件苦差事，机器人不只搬箱子了",
+      "tag": "双11",
+      "type": "topic",
+      "category": "trend",
+      "time": "今日推荐"
+    },
     {
       "title": "ChatGPT 占全球 AI 聊天流量超 81%；iOS 27.3 曝光 Siri「个人记忆系统」；传玛莎拉蒂+尊界合作新车曝光｜极客早知道",
       "desc": "今日热点：ChatGPT 占全球 AI 聊天流量超 81%；iOS 27.3 曝光 Siri「个人记忆系统」；传玛莎拉蒂+尊界合作新车曝光｜极客早知道",
       "tag": "数据",
       "type": "topic",
       "category": "photo",
-      "time": "今日推荐"
-    },
-    {
-      "title": "【BLG vs GEN】德云色解说：新王登基！等待一生的巨浪！（2026全球总决赛）",
-      "desc": "今日热点：【BLG vs GEN】德云色解说：新王登基！等待一生的巨浪！（2026全球总决赛）",
-      "tag": "直播",
-      "type": "topic",
-      "category": "trend",
       "time": "今日推荐"
     },
     {
@@ -147,8 +147,8 @@ window.DAILY_FEED = {
       "time": "今日推荐"
     },
     {
-      "title": "联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有",
-      "desc": "今日热点：联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有",
+      "title": "早报｜黄仁勋考虑重返英伟达担任CEO/曝苹果智能眼镜明年6月发布/微软全球大宕机结束，持续超30小时",
+      "desc": "今日热点：早报｜黄仁勋考虑重返英伟达担任CEO/曝苹果智能眼镜明年6月发布/微软全球大宕机结束，持续超30小时",
       "tag": "综合",
       "type": "topic",
       "category": "trend",
@@ -171,13 +171,6 @@ window.DAILY_FEED = {
       "source": "http://www.geekpark.net/news/373946"
     },
     {
-      "title": "早报｜苹果支持社区将关停/曝英伟达董事会考虑罢免黄仁勋/余承东官宣华为子品牌OSTA星芒",
-      "desc": "今日热点：早报｜苹果支持社区将关停/曝英伟达董事会考虑罢免黄仁勋/余承东官宣华为子品牌OSTA星芒",
-      "tag": "品牌",
-      "time": "今日",
-      "source": "https://www.ifanr.com/1689051?utm_source=rss&utm_medium=rss&utm_campaign="
-    },
-    {
       "title": "余承东公布华为问界新合作模式！新 M8 同步上市，起售价 37.98 万元",
       "desc": "今日热点：余承东公布华为问界新合作模式！新 M8 同步上市，起售价 37.98 万元",
       "tag": "上市",
@@ -193,6 +186,34 @@ window.DAILY_FEED = {
     }
   ],
   "contentMaterials": [
+    {
+      "source": "退货这件苦差事，机器人不只搬箱子了",
+      "hook": "你知道吗？退货这件苦差事，机器人不只搬箱子了，背后藏着电商人必须看懂的信号。",
+      "angle": "从商家实战角度拆解这个热点对运营的影响",
+      "script": [
+        {
+          "shot": "开场",
+          "visual": "热点数据截图",
+          "voiceover": "今天聊退货这件苦差事，机器人不只搬箱子了，这事跟每个做电商的都有关系。"
+        },
+        {
+          "shot": "拆解",
+          "visual": "要点列表",
+          "voiceover": "三个关键点你必须知道……"
+        },
+        {
+          "shot": "落地",
+          "visual": "操作步骤",
+          "voiceover": "具体怎么用，我给你拆成三步走。"
+        }
+      ],
+      "keyPoints": [
+        "核心：退货这件苦差事，机器人不只搬箱子了",
+        "趋势：平台正在加码这个方向"
+      ],
+      "cta": "关注我，每天更新电商+AI的实战干货。",
+      "category": "trend"
+    },
     {
       "source": "ChatGPT 占全球 AI 聊天流量超 81%；iOS 27.3 曝光 Siri「个人记忆系统」；传玛莎拉蒂+尊界合作新车曝光｜极客早知道",
       "hook": "你知道吗？ChatGPT 占全球 AI 聊天流量超 81%；iOS 27.3 曝光 Siri「个人记忆系统」；传玛莎拉蒂+尊界合作新车曝光｜极客早知道，背后藏着电商人必须看懂的信号。",
@@ -220,34 +241,6 @@ window.DAILY_FEED = {
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
       "category": "photo"
-    },
-    {
-      "source": "【BLG vs GEN】德云色解说：新王登基！等待一生的巨浪！（2026全球总决赛）",
-      "hook": "你知道吗？【BLG vs GEN】德云色解说：新王登基！等待一生的巨浪！（2026全球总决赛），背后藏着电商人必须看懂的信号。",
-      "angle": "从商家实战角度拆解这个热点对运营的影响",
-      "script": [
-        {
-          "shot": "开场",
-          "visual": "热点数据截图",
-          "voiceover": "今天聊【BLG vs GEN】德云色解说：新王登基！等待一生的巨浪！（2026全球总决赛），这事跟每个做电商的都有关系。"
-        },
-        {
-          "shot": "拆解",
-          "visual": "要点列表",
-          "voiceover": "三个关键点你必须知道……"
-        },
-        {
-          "shot": "落地",
-          "visual": "操作步骤",
-          "voiceover": "具体怎么用，我给你拆成三步走。"
-        }
-      ],
-      "keyPoints": [
-        "核心：【BLG vs GEN】德云色解说：新王登基！等待一生的巨浪！（2026全球总决赛）",
-        "趋势：平台正在加码这个方向"
-      ],
-      "cta": "关注我，每天更新电商+AI的实战干货。",
-      "category": "trend"
     },
     {
       "source": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
@@ -306,14 +299,14 @@ window.DAILY_FEED = {
       "category": "photo"
     },
     {
-      "source": "联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有",
-      "hook": "你知道吗？联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有，背后藏着电商人必须看懂的信号。",
+      "source": "早报｜黄仁勋考虑重返英伟达担任CEO/曝苹果智能眼镜明年6月发布/微软全球大宕机结束，持续超30小时",
+      "hook": "你知道吗？早报｜黄仁勋考虑重返英伟达担任CEO/曝苹果智能眼镜明年6月发布/微软全球大宕机结束，持续超30小时，背后藏着电商人必须看懂的信号。",
       "angle": "从商家实战角度拆解这个热点对运营的影响",
       "script": [
         {
           "shot": "开场",
           "visual": "热点数据截图",
-          "voiceover": "今天聊联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有，这事跟每个做电商的都有关系。"
+          "voiceover": "今天聊早报｜黄仁勋考虑重返英伟达担任CEO/曝苹果智能眼镜明年6月发布/微软全球大宕机结束，持续超30小时，这事跟每个做电商的都有关系。"
         },
         {
           "shot": "拆解",
@@ -327,7 +320,7 @@ window.DAILY_FEED = {
         }
       ],
       "keyPoints": [
-        "核心：联想 Googlebook 15 评测：安卓电脑准备好了，安卓没有",
+        "核心：早报｜黄仁勋考虑重返英伟达担任CEO/曝苹果智能眼镜明年6月发布/微软全球大宕机结束，持续超30小时",
         "趋势：平台正在加码这个方向"
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
