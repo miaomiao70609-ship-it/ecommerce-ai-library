@@ -1,7 +1,7 @@
 // 电商+AI 内容库 · 每日动态 Feed（自动生成，勿手改）
-// 生成时间: 2026-11-16 13:49 (Asia/Shanghai)
+// 生成时间: 2026-11-17 05:51 (Asia/Shanghai)
 window.DAILY_FEED = {
-  "lastUpdate": "2026-11-16 13:49",
+  "lastUpdate": "2026-11-17 05:51",
   "hotTopics": [
     {
       "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
@@ -18,11 +18,11 @@ window.DAILY_FEED = {
       "source": "https://www.ifanr.com/1689521?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
-      "title": "退货这件苦差事，机器人不只搬箱子了",
-      "desc": "今日热点：退货这件苦差事，机器人不只搬箱子了",
-      "tag": "双11",
+      "title": "影石这张「魔法相纸」，怎么治好了我的相册吃灰症？",
+      "desc": "今日热点：影石这张「魔法相纸」，怎么治好了我的相册吃灰症？",
+      "tag": "综合",
       "time": "今日",
-      "source": "https://www.tmtpost.com/8206264.html"
+      "source": "https://www.ifanr.com/1689594?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
       "title": "iPhone 20 爆料汇总：一整块玻璃，藏着苹果下一个十年",
@@ -115,19 +115,19 @@ window.DAILY_FEED = {
   ],
   "topicIdeas": [
     {
-      "title": "退货这件苦差事，机器人不只搬箱子了",
-      "desc": "今日热点：退货这件苦差事，机器人不只搬箱子了",
-      "tag": "双11",
-      "type": "topic",
-      "category": "trend",
-      "time": "今日推荐"
-    },
-    {
       "title": "ChatGPT 占全球 AI 聊天流量超 81%；iOS 27.3 曝光 Siri「个人记忆系统」；传玛莎拉蒂+尊界合作新车曝光｜极客早知道",
       "desc": "今日热点：ChatGPT 占全球 AI 聊天流量超 81%；iOS 27.3 曝光 Siri「个人记忆系统」；传玛莎拉蒂+尊界合作新车曝光｜极客早知道",
       "tag": "数据",
       "type": "topic",
       "category": "photo",
+      "time": "今日推荐"
+    },
+    {
+      "title": "食贫道闯关东吃饭故事上新",
+      "desc": "今日热点：食贫道闯关东吃饭故事上新",
+      "tag": "综合",
+      "type": "topic",
+      "category": "trend",
       "time": "今日推荐"
     },
     {
@@ -176,44 +176,9 @@ window.DAILY_FEED = {
       "tag": "上市",
       "time": "今日",
       "source": "https://www.ifanr.com/1689432?utm_source=rss&utm_medium=rss&utm_campaign="
-    },
-    {
-      "title": "26.99 万元起！腾势 N8 上市，内饰最美的比亚迪来了",
-      "desc": "今日热点：26.99 万元起！腾势 N8 上市，内饰最美的比亚迪来了",
-      "tag": "上市",
-      "time": "今日",
-      "source": "https://www.ifanr.com/1689232?utm_source=rss&utm_medium=rss&utm_campaign="
     }
   ],
   "contentMaterials": [
-    {
-      "source": "退货这件苦差事，机器人不只搬箱子了",
-      "hook": "你知道吗？退货这件苦差事，机器人不只搬箱子了，背后藏着电商人必须看懂的信号。",
-      "angle": "从商家实战角度拆解这个热点对运营的影响",
-      "script": [
-        {
-          "shot": "开场",
-          "visual": "热点数据截图",
-          "voiceover": "今天聊退货这件苦差事，机器人不只搬箱子了，这事跟每个做电商的都有关系。"
-        },
-        {
-          "shot": "拆解",
-          "visual": "要点列表",
-          "voiceover": "三个关键点你必须知道……"
-        },
-        {
-          "shot": "落地",
-          "visual": "操作步骤",
-          "voiceover": "具体怎么用，我给你拆成三步走。"
-        }
-      ],
-      "keyPoints": [
-        "核心：退货这件苦差事，机器人不只搬箱子了",
-        "趋势：平台正在加码这个方向"
-      ],
-      "cta": "关注我，每天更新电商+AI的实战干货。",
-      "category": "trend"
-    },
     {
       "source": "ChatGPT 占全球 AI 聊天流量超 81%；iOS 27.3 曝光 Siri「个人记忆系统」；传玛莎拉蒂+尊界合作新车曝光｜极客早知道",
       "hook": "你知道吗？ChatGPT 占全球 AI 聊天流量超 81%；iOS 27.3 曝光 Siri「个人记忆系统」；传玛莎拉蒂+尊界合作新车曝光｜极客早知道，背后藏着电商人必须看懂的信号。",
@@ -241,6 +206,34 @@ window.DAILY_FEED = {
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
       "category": "photo"
+    },
+    {
+      "source": "食贫道闯关东吃饭故事上新",
+      "hook": "你知道吗？食贫道闯关东吃饭故事上新，背后藏着电商人必须看懂的信号。",
+      "angle": "从商家实战角度拆解这个热点对运营的影响",
+      "script": [
+        {
+          "shot": "开场",
+          "visual": "热点数据截图",
+          "voiceover": "今天聊食贫道闯关东吃饭故事上新，这事跟每个做电商的都有关系。"
+        },
+        {
+          "shot": "拆解",
+          "visual": "要点列表",
+          "voiceover": "三个关键点你必须知道……"
+        },
+        {
+          "shot": "落地",
+          "visual": "操作步骤",
+          "voiceover": "具体怎么用，我给你拆成三步走。"
+        }
+      ],
+      "keyPoints": [
+        "核心：食贫道闯关东吃饭故事上新",
+        "趋势：平台正在加码这个方向"
+      ],
+      "cta": "关注我，每天更新电商+AI的实战干货。",
+      "category": "trend"
     },
     {
       "source": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
