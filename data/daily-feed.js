@@ -1,7 +1,7 @@
 // 电商+AI 内容库 · 每日动态 Feed（自动生成，勿手改）
-// 生成时间: 2026-11-17 15:27 (Asia/Shanghai)
+// 生成时间: 2026-11-18 04:41 (Asia/Shanghai)
 window.DAILY_FEED = {
-  "lastUpdate": "2026-11-17 15:27",
+  "lastUpdate": "2026-11-18 04:41",
   "hotTopics": [
     {
       "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
@@ -123,11 +123,11 @@ window.DAILY_FEED = {
       "time": "今日推荐"
     },
     {
-      "title": "食贫道闯关东吃饭故事上新",
-      "desc": "今日热点：食贫道闯关东吃饭故事上新",
-      "tag": "综合",
+      "title": "AI，没有抛弃小城商家",
+      "desc": "今日热点：AI，没有抛弃小城商家",
+      "tag": "数据",
       "type": "topic",
-      "category": "trend",
+      "category": "photo",
       "time": "今日推荐"
     },
     {
@@ -178,13 +178,6 @@ window.DAILY_FEED = {
       "source": "https://www.ifanr.com/1689760?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
-      "title": "雄安十周年：拼多多落子，民营企业参与新区建设的新样本",
-      "desc": "今日热点：雄安十周年：拼多多落子，民营企业参与新区建设的新样本",
-      "tag": "拼多多",
-      "time": "今日",
-      "source": "https://www.tmtpost.com/8206797.html"
-    },
-    {
       "title": "余承东公布华为问界新合作模式！新 M8 同步上市，起售价 37.98 万元",
       "desc": "今日热点：余承东公布华为问界新合作模式！新 M8 同步上市，起售价 37.98 万元",
       "tag": "上市",
@@ -222,14 +215,14 @@ window.DAILY_FEED = {
       "category": "photo"
     },
     {
-      "source": "食贫道闯关东吃饭故事上新",
-      "hook": "你知道吗？食贫道闯关东吃饭故事上新，背后藏着电商人必须看懂的信号。",
+      "source": "AI，没有抛弃小城商家",
+      "hook": "你知道吗？AI，没有抛弃小城商家，背后藏着电商人必须看懂的信号。",
       "angle": "从商家实战角度拆解这个热点对运营的影响",
       "script": [
         {
           "shot": "开场",
           "visual": "热点数据截图",
-          "voiceover": "今天聊食贫道闯关东吃饭故事上新，这事跟每个做电商的都有关系。"
+          "voiceover": "今天聊AI，没有抛弃小城商家，这事跟每个做电商的都有关系。"
         },
         {
           "shot": "拆解",
@@ -243,11 +236,11 @@ window.DAILY_FEED = {
         }
       ],
       "keyPoints": [
-        "核心：食贫道闯关东吃饭故事上新",
+        "核心：AI，没有抛弃小城商家",
         "趋势：平台正在加码这个方向"
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
-      "category": "trend"
+      "category": "photo"
     },
     {
       "source": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
