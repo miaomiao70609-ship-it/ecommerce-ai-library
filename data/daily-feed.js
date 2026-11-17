@@ -1,7 +1,7 @@
 // 电商+AI 内容库 · 每日动态 Feed（自动生成，勿手改）
-// 生成时间: 2026-11-17 05:51 (Asia/Shanghai)
+// 生成时间: 2026-11-17 15:27 (Asia/Shanghai)
 window.DAILY_FEED = {
-  "lastUpdate": "2026-11-17 05:51",
+  "lastUpdate": "2026-11-17 15:27",
   "hotTopics": [
     {
       "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
@@ -169,6 +169,20 @@ window.DAILY_FEED = {
       "tag": "字节",
       "time": "今日",
       "source": "http://www.geekpark.net/news/373946"
+    },
+    {
+      "title": "早报｜iPhone Duo新增外屏人脸解锁/曝英伟达董事会无意请回黄仁勋/华为Mate X8定档11月24日",
+      "desc": "今日热点：早报｜iPhone Duo新增外屏人脸解锁/曝英伟达董事会无意请回黄仁勋/华为Mate X8定档11月24日",
+      "tag": "阿里",
+      "time": "今日",
+      "source": "https://www.ifanr.com/1689760?utm_source=rss&utm_medium=rss&utm_campaign="
+    },
+    {
+      "title": "雄安十周年：拼多多落子，民营企业参与新区建设的新样本",
+      "desc": "今日热点：雄安十周年：拼多多落子，民营企业参与新区建设的新样本",
+      "tag": "拼多多",
+      "time": "今日",
+      "source": "https://www.tmtpost.com/8206797.html"
     },
     {
       "title": "余承东公布华为问界新合作模式！新 M8 同步上市，起售价 37.98 万元",
