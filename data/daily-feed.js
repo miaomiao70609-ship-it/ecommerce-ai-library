@@ -1,7 +1,7 @@
 // 电商+AI 内容库 · 每日动态 Feed（自动生成，勿手改）
-// 生成时间: 2026-11-18 04:41 (Asia/Shanghai)
+// 生成时间: 2026-11-18 14:51 (Asia/Shanghai)
 window.DAILY_FEED = {
-  "lastUpdate": "2026-11-18 04:41",
+  "lastUpdate": "2026-11-18 14:51",
   "hotTopics": [
     {
       "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
@@ -25,18 +25,18 @@ window.DAILY_FEED = {
       "source": "https://www.ifanr.com/1689594?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
-      "title": "iPhone 20 爆料汇总：一整块玻璃，藏着苹果下一个十年",
-      "desc": "今日热点：iPhone 20 爆料汇总：一整块玻璃，藏着苹果下一个十年",
+      "title": "除了人脸解锁，iPhone Duo 2 还值得哪些升级？",
+      "desc": "今日热点：除了人脸解锁，iPhone Duo 2 还值得哪些升级？",
       "tag": "综合",
       "time": "今日",
-      "source": "https://www.ifanr.com/1689409?utm_source=rss&utm_medium=rss&utm_campaign="
+      "source": "https://www.ifanr.com/1690009?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
-      "title": "原厂宽体+碳纤大尾翼！用 13.38 万，买到一辆「领克 03+」",
-      "desc": "今日热点：原厂宽体+碳纤大尾翼！用 13.38 万，买到一辆「领克 03+」",
+      "title": "苹果眼镜明年见：没有屏幕，全靠 Siri 撑场面？",
+      "desc": "今日热点：苹果眼镜明年见：没有屏幕，全靠 Siri 撑场面？",
       "tag": "综合",
       "time": "今日",
-      "source": "https://www.ifanr.com/1689570?utm_source=rss&utm_medium=rss&utm_campaign="
+      "source": "https://www.ifanr.com/1689712?utm_source=rss&utm_medium=rss&utm_campaign="
     }
   ],
   "aiTools": [
@@ -178,11 +178,18 @@ window.DAILY_FEED = {
       "source": "https://www.ifanr.com/1689760?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
-      "title": "余承东公布华为问界新合作模式！新 M8 同步上市，起售价 37.98 万元",
-      "desc": "今日热点：余承东公布华为问界新合作模式！新 M8 同步上市，起售价 37.98 万元",
-      "tag": "上市",
+      "title": "京东利润回来了，但它正在变成一家更“重”的公司",
+      "desc": "今日热点：京东利润回来了，但它正在变成一家更“重”的公司",
+      "tag": "京东",
       "time": "今日",
-      "source": "https://www.ifanr.com/1689432?utm_source=rss&utm_medium=rss&utm_campaign="
+      "source": "https://www.tmtpost.com/8209333.html"
+    },
+    {
+      "title": "抖音生服换帅：字节为什么派“红果掌门”去打美团？",
+      "desc": "今日热点：抖音生服换帅：字节为什么派“红果掌门”去打美团？",
+      "tag": "字节",
+      "time": "今日",
+      "source": "https://www.tmtpost.com/8209254.html"
     }
   ],
   "contentMaterials": [
