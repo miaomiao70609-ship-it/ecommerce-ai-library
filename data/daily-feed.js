@@ -1,7 +1,7 @@
 // 电商+AI 内容库 · 每日动态 Feed（自动生成，勿手改）
-// 生成时间: 2026-11-19 14:52 (Asia/Shanghai)
+// 生成时间: 2026-11-20 04:20 (Asia/Shanghai)
 window.DAILY_FEED = {
-  "lastUpdate": "2026-11-19 14:52",
+  "lastUpdate": "2026-11-20 04:20",
   "hotTopics": [
     {
       "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
@@ -11,13 +11,6 @@ window.DAILY_FEED = {
       "source": "http://www.geekpark.net/news/373760"
     },
     {
-      "title": "影石这张「魔法相纸」，怎么治好了我的相册吃灰症？",
-      "desc": "今日热点：影石这张「魔法相纸」，怎么治好了我的相册吃灰症？",
-      "tag": "综合",
-      "time": "今日",
-      "source": "https://www.ifanr.com/1689594?utm_source=rss&utm_medium=rss&utm_campaign="
-    },
-    {
       "title": "除了人脸解锁，iPhone Duo 2 还值得哪些升级？",
       "desc": "今日热点：除了人脸解锁，iPhone Duo 2 还值得哪些升级？",
       "tag": "综合",
@@ -25,18 +18,25 @@ window.DAILY_FEED = {
       "source": "https://www.ifanr.com/1690009?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
-      "title": "苹果眼镜明年见：没有屏幕，全靠 Siri 撑场面？",
-      "desc": "今日热点：苹果眼镜明年见：没有屏幕，全靠 Siri 撑场面？",
-      "tag": "综合",
-      "time": "今日",
-      "source": "https://www.ifanr.com/1689712?utm_source=rss&utm_medium=rss&utm_campaign="
-    },
-    {
       "title": "曾经的纯电超跑之王 Rimac Nevera 宣布停产，CEO 转头造出了 16 缸的布加迪新旗舰",
       "desc": "今日热点：曾经的纯电超跑之王 Rimac Nevera 宣布停产，CEO 转头造出了 16 缸的布加迪新旗舰",
       "tag": "综合",
       "time": "今日",
       "source": "https://www.ifanr.com/1690064?utm_source=rss&utm_medium=rss&utm_campaign="
+    },
+    {
+      "title": "DeepSeek 不限额的用法，都在这里了 |  附指南",
+      "desc": "今日热点：DeepSeek 不限额的用法，都在这里了 |  附指南",
+      "tag": "综合",
+      "time": "今日",
+      "source": "https://www.ifanr.com/1689869?utm_source=rss&utm_medium=rss&utm_campaign="
+    },
+    {
+      "title": "比亚迪发布折叠方向盘！首搭方程豹钛 9，27.99 万元起！",
+      "desc": "今日热点：比亚迪发布折叠方向盘！首搭方程豹钛 9，27.99 万元起！",
+      "tag": "综合",
+      "time": "今日",
+      "source": "https://www.ifanr.com/1690430?utm_source=rss&utm_medium=rss&utm_campaign="
     }
   ],
   "aiTools": [
@@ -147,8 +147,8 @@ window.DAILY_FEED = {
       "time": "今日推荐"
     },
     {
-      "title": "影石这张「魔法相纸」，怎么治好了我的相册吃灰症？",
-      "desc": "今日热点：影石这张「魔法相纸」，怎么治好了我的相册吃灰症？",
+      "title": "除了人脸解锁，iPhone Duo 2 还值得哪些升级？",
+      "desc": "今日热点：除了人脸解锁，iPhone Duo 2 还值得哪些升级？",
       "tag": "综合",
       "type": "topic",
       "category": "trend",
@@ -171,13 +171,6 @@ window.DAILY_FEED = {
       "source": "http://www.geekpark.net/news/373946"
     },
     {
-      "title": "【钛晨报】事关国有资本布局优化，国资委提三条要求；资本市场辟谣平台：“国常会上有人表态不会再频繁救市了”系谣言；美联储理事沃勒：若不释放1月加息的信号，应在12月加息50个基点",
-      "desc": "今日热点：【钛晨报】事关国有资本布局优化，国资委提三条要求；资本市场辟谣平台：“国常会上有人表态不会再频繁救市了”系谣言；美联储理事沃勒：若不释放1月加息的信号，应在12月加息50个基点",
-      "tag": "财报",
-      "time": "今日",
-      "source": "https://www.tmtpost.com/8210449.html"
-    },
-    {
       "title": "早报｜iPhone Duo新增外屏人脸解锁/曝英伟达董事会无意请回黄仁勋/华为Mate X8定档11月24日",
       "desc": "今日热点：早报｜iPhone Duo新增外屏人脸解锁/曝英伟达董事会无意请回黄仁勋/华为Mate X8定档11月24日",
       "tag": "阿里",
@@ -185,11 +178,18 @@ window.DAILY_FEED = {
       "source": "https://www.ifanr.com/1689760?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
-      "title": "Q3营收重返正增长，不卷外卖的京东将“拐”向何方？",
-      "desc": "今日热点：Q3营收重返正增长，不卷外卖的京东将“拐”向何方？",
-      "tag": "京东",
+      "title": "刚刚，Anthropic 敲钟上市！史上最大IPO却让硅谷吵翻了",
+      "desc": "今日热点：刚刚，Anthropic 敲钟上市！史上最大IPO却让硅谷吵翻了",
+      "tag": "上市",
       "time": "今日",
-      "source": "https://www.tmtpost.com/8210838.html"
+      "source": "https://www.ifanr.com/1690375?utm_source=rss&utm_medium=rss&utm_campaign="
+    },
+    {
+      "title": "重庆汽车与医药制造双线并进，产业升级如何转化为企业长期价值？",
+      "desc": "今日热点：重庆汽车与医药制造双线并进，产业升级如何转化为企业长期价值？",
+      "tag": "上市",
+      "time": "今日",
+      "source": "https://www.tmtpost.com/8211669.html"
     }
   ],
   "contentMaterials": [
@@ -306,14 +306,14 @@ window.DAILY_FEED = {
       "category": "photo"
     },
     {
-      "source": "影石这张「魔法相纸」，怎么治好了我的相册吃灰症？",
-      "hook": "你知道吗？影石这张「魔法相纸」，怎么治好了我的相册吃灰症？，背后藏着电商人必须看懂的信号。",
+      "source": "除了人脸解锁，iPhone Duo 2 还值得哪些升级？",
+      "hook": "你知道吗？除了人脸解锁，iPhone Duo 2 还值得哪些升级？，背后藏着电商人必须看懂的信号。",
       "angle": "从商家实战角度拆解这个热点对运营的影响",
       "script": [
         {
           "shot": "开场",
           "visual": "热点数据截图",
-          "voiceover": "今天聊影石这张「魔法相纸」，怎么治好了我的相册吃灰症？，这事跟每个做电商的都有关系。"
+          "voiceover": "今天聊除了人脸解锁，iPhone Duo 2 还值得哪些升级？，这事跟每个做电商的都有关系。"
         },
         {
           "shot": "拆解",
@@ -327,7 +327,7 @@ window.DAILY_FEED = {
         }
       ],
       "keyPoints": [
-        "核心：影石这张「魔法相纸」，怎么治好了我的相册吃灰症？",
+        "核心：除了人脸解锁，iPhone Duo 2 还值得哪些升级？",
         "趋势：平台正在加码这个方向"
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
