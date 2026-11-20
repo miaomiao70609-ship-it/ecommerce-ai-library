@@ -1,7 +1,7 @@
 // 电商+AI 内容库 · 每日动态 Feed（自动生成，勿手改）
-// 生成时间: 2026-11-20 14:42 (Asia/Shanghai)
+// 生成时间: 2026-11-21 03:51 (Asia/Shanghai)
 window.DAILY_FEED = {
-  "lastUpdate": "2026-11-20 14:42",
+  "lastUpdate": "2026-11-21 03:51",
   "hotTopics": [
     {
       "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
@@ -18,25 +18,25 @@ window.DAILY_FEED = {
       "source": "https://www.ifanr.com/1690546?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
+      "title": "给 Gemini 道歉，请自觉排队",
+      "desc": "今日热点：给 Gemini 道歉，请自觉排队",
+      "tag": "综合",
+      "time": "今日",
+      "source": "https://www.ifanr.com/1690572?utm_source=rss&utm_medium=rss&utm_campaign="
+    },
+    {
+      "title": "理想造了一颗登上台积电讲台的芯片，却希望你在开车时彻底忘掉它",
+      "desc": "今日热点：理想造了一颗登上台积电讲台的芯片，却希望你在开车时彻底忘掉它",
+      "tag": "综合",
+      "time": "今日",
+      "source": "https://www.ifanr.com/1690596?utm_source=rss&utm_medium=rss&utm_campaign="
+    },
+    {
       "title": "曾经的纯电超跑之王 Rimac Nevera 宣布停产，CEO 转头造出了 16 缸的布加迪新旗舰",
       "desc": "今日热点：曾经的纯电超跑之王 Rimac Nevera 宣布停产，CEO 转头造出了 16 缸的布加迪新旗舰",
       "tag": "综合",
       "time": "今日",
       "source": "https://www.ifanr.com/1690064?utm_source=rss&utm_medium=rss&utm_campaign="
-    },
-    {
-      "title": "DeepSeek 不限额的用法，都在这里了 |  附指南",
-      "desc": "今日热点：DeepSeek 不限额的用法，都在这里了 |  附指南",
-      "tag": "综合",
-      "time": "今日",
-      "source": "https://www.ifanr.com/1689869?utm_source=rss&utm_medium=rss&utm_campaign="
-    },
-    {
-      "title": "比亚迪发布折叠方向盘！首搭方程豹钛 9，27.99 万元起！",
-      "desc": "今日热点：比亚迪发布折叠方向盘！首搭方程豹钛 9，27.99 万元起！",
-      "tag": "综合",
-      "time": "今日",
-      "source": "https://www.ifanr.com/1690430?utm_source=rss&utm_medium=rss&utm_campaign="
     }
   ],
   "aiTools": [
@@ -131,25 +131,25 @@ window.DAILY_FEED = {
       "time": "今日推荐"
     },
     {
-      "title": "北汽押注千TOPS算力芯片，舱驾融合还有多远？",
-      "desc": "今日热点：北汽押注千TOPS算力芯片，舱驾融合还有多远？",
-      "tag": "综合",
+      "title": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
+      "desc": "今日热点：体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
+      "tag": "用户",
       "type": "topic",
       "category": "trend",
       "time": "今日推荐"
     },
     {
-      "title": "BLG Xun直播",
-      "desc": "今日热点：BLG Xun直播",
-      "tag": "直播",
+      "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
+      "desc": "今日热点：千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
+      "tag": "大促",
       "type": "topic",
-      "category": "live",
+      "category": "photo",
       "time": "今日推荐"
     },
     {
-      "title": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
-      "desc": "今日热点：体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
-      "tag": "用户",
+      "title": "奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」",
+      "desc": "今日热点：奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」",
+      "tag": "综合",
       "type": "topic",
       "category": "trend",
       "time": "今日推荐"
@@ -171,6 +171,13 @@ window.DAILY_FEED = {
       "source": "http://www.geekpark.net/news/373946"
     },
     {
+      "title": "2715亿营收、344亿现金流出：阿里的利润拐点与“未完成”的账单",
+      "desc": "今日热点：2715亿营收、344亿现金流出：阿里的利润拐点与“未完成”的账单",
+      "tag": "阿里",
+      "time": "今日",
+      "source": "https://www.tmtpost.com/8211484.html"
+    },
+    {
       "title": "刚刚，Anthropic 敲钟上市！史上最大IPO却让硅谷吵翻了",
       "desc": "今日热点：刚刚，Anthropic 敲钟上市！史上最大IPO却让硅谷吵翻了",
       "tag": "上市",
@@ -178,18 +185,11 @@ window.DAILY_FEED = {
       "source": "https://www.ifanr.com/1690375?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
-      "title": "阿里云加速增长，平头哥走向台前 | 看财报",
-      "desc": "今日热点：阿里云加速增长，平头哥走向台前 | 看财报",
+      "title": "阿里发布2027年Q2财报：阿里云AI收入增长53%，即时零售减亏",
+      "desc": "今日热点：阿里发布2027年Q2财报：阿里云AI收入增长53%，即时零售减亏",
       "tag": "财报",
       "time": "今日",
-      "source": "https://www.tmtpost.com/8211922.html"
-    },
-    {
-      "title": "从悦榕庄到安纳塔拉，一家温泉酒店的换牌实验",
-      "desc": "今日热点：从悦榕庄到安纳塔拉，一家温泉酒店的换牌实验",
-      "tag": "品牌",
-      "time": "今日",
-      "source": "https://www.tmtpost.com/8212241.html"
+      "source": "https://www.tmtpost.com/8212798.html"
     }
   ],
   "contentMaterials": [
@@ -250,62 +250,6 @@ window.DAILY_FEED = {
       "category": "photo"
     },
     {
-      "source": "北汽押注千TOPS算力芯片，舱驾融合还有多远？",
-      "hook": "你知道吗？北汽押注千TOPS算力芯片，舱驾融合还有多远？，背后藏着电商人必须看懂的信号。",
-      "angle": "从商家实战角度拆解这个热点对运营的影响",
-      "script": [
-        {
-          "shot": "开场",
-          "visual": "热点数据截图",
-          "voiceover": "今天聊北汽押注千TOPS算力芯片，舱驾融合还有多远？，这事跟每个做电商的都有关系。"
-        },
-        {
-          "shot": "拆解",
-          "visual": "要点列表",
-          "voiceover": "三个关键点你必须知道……"
-        },
-        {
-          "shot": "落地",
-          "visual": "操作步骤",
-          "voiceover": "具体怎么用，我给你拆成三步走。"
-        }
-      ],
-      "keyPoints": [
-        "核心：北汽押注千TOPS算力芯片，舱驾融合还有多远？",
-        "趋势：平台正在加码这个方向"
-      ],
-      "cta": "关注我，每天更新电商+AI的实战干货。",
-      "category": "trend"
-    },
-    {
-      "source": "BLG Xun直播",
-      "hook": "你知道吗？BLG Xun直播，背后藏着电商人必须看懂的信号。",
-      "angle": "从商家实战角度拆解这个热点对运营的影响",
-      "script": [
-        {
-          "shot": "开场",
-          "visual": "热点数据截图",
-          "voiceover": "今天聊BLG Xun直播，这事跟每个做电商的都有关系。"
-        },
-        {
-          "shot": "拆解",
-          "visual": "要点列表",
-          "voiceover": "三个关键点你必须知道……"
-        },
-        {
-          "shot": "落地",
-          "visual": "操作步骤",
-          "voiceover": "具体怎么用，我给你拆成三步走。"
-        }
-      ],
-      "keyPoints": [
-        "核心：BLG Xun直播",
-        "趋势：平台正在加码这个方向"
-      ],
-      "cta": "关注我，每天更新电商+AI的实战干货。",
-      "category": "live"
-    },
-    {
       "source": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
       "hook": "你知道吗？体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子，背后藏着电商人必须看懂的信号。",
       "angle": "从商家实战角度拆解这个热点对运营的影响",
@@ -328,6 +272,62 @@ window.DAILY_FEED = {
       ],
       "keyPoints": [
         "核心：体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
+        "趋势：平台正在加码这个方向"
+      ],
+      "cta": "关注我，每天更新电商+AI的实战干货。",
+      "category": "trend"
+    },
+    {
+      "source": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
+      "hook": "你知道吗？千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了，背后藏着电商人必须看懂的信号。",
+      "angle": "从商家实战角度拆解这个热点对运营的影响",
+      "script": [
+        {
+          "shot": "开场",
+          "visual": "热点数据截图",
+          "voiceover": "今天聊千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了，这事跟每个做电商的都有关系。"
+        },
+        {
+          "shot": "拆解",
+          "visual": "要点列表",
+          "voiceover": "三个关键点你必须知道……"
+        },
+        {
+          "shot": "落地",
+          "visual": "操作步骤",
+          "voiceover": "具体怎么用，我给你拆成三步走。"
+        }
+      ],
+      "keyPoints": [
+        "核心：千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
+        "趋势：平台正在加码这个方向"
+      ],
+      "cta": "关注我，每天更新电商+AI的实战干货。",
+      "category": "photo"
+    },
+    {
+      "source": "奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」",
+      "hook": "你知道吗？奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」，背后藏着电商人必须看懂的信号。",
+      "angle": "从商家实战角度拆解这个热点对运营的影响",
+      "script": [
+        {
+          "shot": "开场",
+          "visual": "热点数据截图",
+          "voiceover": "今天聊奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」，这事跟每个做电商的都有关系。"
+        },
+        {
+          "shot": "拆解",
+          "visual": "要点列表",
+          "voiceover": "三个关键点你必须知道……"
+        },
+        {
+          "shot": "落地",
+          "visual": "操作步骤",
+          "voiceover": "具体怎么用，我给你拆成三步走。"
+        }
+      ],
+      "keyPoints": [
+        "核心：奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」",
         "趋势：平台正在加码这个方向"
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
