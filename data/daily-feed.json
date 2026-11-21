@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-11-21 03:51",
+  "lastUpdate": "2026-11-21 14:35",
   "hotTopics": [
     {
       "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
@@ -90,13 +90,6 @@
       "source": "http://www.geekpark.net/news/373993"
     },
     {
-      "title": "具身智能，也到了 API 时刻？",
-      "desc": "今日热点：具身智能，也到了 API 时刻？",
-      "tag": "数据",
-      "time": "今日",
-      "source": "http://www.geekpark.net/news/373683"
-    },
-    {
       "title": "一颗植物工厂草莓，离你的果盘还有多远？多多农研拉近现场",
       "desc": "今日热点：一颗植物工厂草莓，离你的果盘还有多远？多多农研拉近现场",
       "tag": "数据",
@@ -109,6 +102,13 @@
       "tag": "用户",
       "time": "今日",
       "source": "http://www.geekpark.net/news/373860"
+    },
+    {
+      "title": "AI，没有抛弃小城商家",
+      "desc": "今日热点：AI，没有抛弃小城商家",
+      "tag": "数据",
+      "time": "今日",
+      "source": "http://www.geekpark.net/news/374101"
     }
   ],
   "topicIdeas": [
@@ -169,11 +169,11 @@
       "source": "http://www.geekpark.net/news/373946"
     },
     {
-      "title": "2715亿营收、344亿现金流出：阿里的利润拐点与“未完成”的账单",
-      "desc": "今日热点：2715亿营收、344亿现金流出：阿里的利润拐点与“未完成”的账单",
-      "tag": "阿里",
+      "title": "早报｜曝Claude证明黎曼猜想，陶哲轩回应/余承东更正发布会表述：开车不能睡觉/五月天公布Vision Pro演唱会，Apple Store可预约体验",
+      "desc": "今日热点：早报｜曝Claude证明黎曼猜想，陶哲轩回应/余承东更正发布会表述：开车不能睡觉/五月天公布Vision Pro演唱会，Apple Store可预约体验",
+      "tag": "品牌",
       "time": "今日",
-      "source": "https://www.tmtpost.com/8211484.html"
+      "source": "https://www.ifanr.com/1690759?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
       "title": "刚刚，Anthropic 敲钟上市！史上最大IPO却让硅谷吵翻了",
@@ -181,13 +181,6 @@
       "tag": "上市",
       "time": "今日",
       "source": "https://www.ifanr.com/1690375?utm_source=rss&utm_medium=rss&utm_campaign="
-    },
-    {
-      "title": "阿里发布2027年Q2财报：阿里云AI收入增长53%，即时零售减亏",
-      "desc": "今日热点：阿里发布2027年Q2财报：阿里云AI收入增长53%，即时零售减亏",
-      "tag": "财报",
-      "time": "今日",
-      "source": "https://www.tmtpost.com/8212798.html"
     }
   ],
   "contentMaterials": [
