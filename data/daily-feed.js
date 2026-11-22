@@ -1,8 +1,15 @@
 // 电商+AI 内容库 · 每日动态 Feed（自动生成，勿手改）
-// 生成时间: 2026-11-22 14:02 (Asia/Shanghai)
+// 生成时间: 2026-11-23 03:18 (Asia/Shanghai)
 window.DAILY_FEED = {
-  "lastUpdate": "2026-11-22 14:02",
+  "lastUpdate": "2026-11-23 03:18",
   "hotTopics": [
+    {
+      "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
+      "desc": "今日热点：千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
+      "tag": "大促",
+      "time": "今日",
+      "source": "http://www.geekpark.net/news/373760"
+    },
     {
       "title": "奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」",
       "desc": "今日热点：奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」",
@@ -30,60 +37,105 @@ window.DAILY_FEED = {
       "tag": "综合",
       "time": "今日",
       "source": "https://www.ifanr.com/1690596?utm_source=rss&utm_medium=rss&utm_campaign="
-    },
-    {
-      "title": "比亚迪发布折叠方向盘！首搭方程豹钛 9，27.99 万元起！",
-      "desc": "今日热点：比亚迪发布折叠方向盘！首搭方程豹钛 9，27.99 万元起！",
-      "tag": "综合",
-      "time": "今日",
-      "source": "https://www.ifanr.com/1690430?utm_source=rss&utm_medium=rss&utm_campaign="
     }
   ],
   "aiTools": [
     {
-      "title": "Edge AI Daily 早报（11月22日）",
-      "desc": "今日热点：Edge AI Daily 早报（11月22日）",
+      "title": "当美国无法建设数据中心，会对 AI 产生怎样的冲击",
+      "desc": "今日热点：当美国无法建设数据中心，会对 AI 产生怎样的冲击",
       "tag": "AI",
       "time": "今日",
-      "source": "https://www.tmtpost.com/8213684.html"
+      "source": "http://www.geekpark.net/news/373816"
     },
     {
-      "title": "早报｜GTA6开售，评分破纪录/大疆多款相机涨价/豆包工作三个月日活破800万",
-      "desc": "今日热点：早报｜GTA6开售，评分破纪录/大疆多款相机涨价/豆包工作三个月日活破800万",
-      "tag": "豆包",
-      "time": "今日",
-      "source": "https://www.ifanr.com/1690255?utm_source=rss&utm_medium=rss&utm_campaign="
-    },
-    {
-      "title": "早报｜苹果招人打造「接管电脑」的AI智能体/史上最大IPO，Anthropic上市/华为官宣Mate 90 Air主打轻薄",
-      "desc": "今日热点：早报｜苹果招人打造「接管电脑」的AI智能体/史上最大IPO，Anthropic上市/华为官宣Mate 90 Air主打轻薄",
+      "title": "重控制、轻渲染，达瓦科技的 AI 视频工业路线",
+      "desc": "今日热点：重控制、轻渲染，达瓦科技的 AI 视频工业路线",
       "tag": "AI",
       "time": "今日",
-      "source": "https://www.ifanr.com/1690473?utm_source=rss&utm_medium=rss&utm_campaign="
+      "source": "http://www.geekpark.net/news/374303"
     },
     {
-      "title": "首款鸿蒙 AI 手机发布：华为全新子品牌 OSTA 星芒有一个「增援未来计划」",
-      "desc": "今日热点：首款鸿蒙 AI 手机发布：华为全新子品牌 OSTA 星芒有一个「增援未来计划」",
+      "title": "「北美大豆包」谷歌，终于杀回 AI 牌桌中央",
+      "desc": "今日热点：「北美大豆包」谷歌，终于杀回 AI 牌桌中央",
       "tag": "AI",
       "time": "今日",
-      "source": "https://www.ifanr.com/1690642?utm_source=rss&utm_medium=rss&utm_campaign="
+      "source": "http://www.geekpark.net/news/374196"
     },
     {
-      "title": "美股一夜崩盘，AI 泡沫真要破了？",
-      "desc": "今日热点：美股一夜崩盘，AI 泡沫真要破了？",
+      "title": "跑分狂飙，实测翻车，刚发的 GPT-6.2 暴露了 OpenAI 的软肋",
+      "desc": "今日热点：跑分狂飙，实测翻车，刚发的 GPT-6.2 暴露了 OpenAI 的软肋",
       "tag": "AI",
       "time": "今日",
-      "source": "https://www.ifanr.com/1690789?utm_source=rss&utm_medium=rss&utm_campaign="
+      "source": "http://www.geekpark.net/news/374175"
+    },
+    {
+      "title": "李彦宏定义 AI 下一个十年，智能组织是「新厂房」",
+      "desc": "今日热点：李彦宏定义 AI 下一个十年，智能组织是「新厂房」",
+      "tag": "AI",
+      "time": "今日",
+      "source": "http://www.geekpark.net/news/373937"
     }
   ],
-  "insights": [],
+  "insights": [
+    {
+      "title": "传小米联手 AMG 之父，打造极致性能车；SpaceX 首次实现筷子夹飞船；「苹果最暗产品」诞生",
+      "desc": "今日热点：传小米联手 AMG 之父，打造极致性能车；SpaceX 首次实现筷子夹飞船；「苹果最暗产品」诞生",
+      "tag": "数据",
+      "time": "今日",
+      "source": "http://www.geekpark.net/news/373993"
+    },
+    {
+      "title": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
+      "desc": "今日热点：体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
+      "tag": "用户",
+      "time": "今日",
+      "source": "http://www.geekpark.net/news/373860"
+    },
+    {
+      "title": "AI，没有抛弃小城商家",
+      "desc": "今日热点：AI，没有抛弃小城商家",
+      "tag": "数据",
+      "time": "今日",
+      "source": "http://www.geekpark.net/news/374101"
+    },
+    {
+      "title": "资本开支猛增 226%，AI 吞噬百亿利润：腾讯的 AI 故事，进入更重的阶段",
+      "desc": "今日热点：资本开支猛增 226%，AI 吞噬百亿利润：腾讯的 AI 故事，进入更重的阶段",
+      "tag": "数据",
+      "time": "今日",
+      "source": "http://www.geekpark.net/news/374302"
+    },
+    {
+      "title": "黄仁勋遭董事会罢免主要原因曝光；《GTA6》首发收入 37.9 亿美元，超《复联 4》总票房；马斯克收到上海工厂员工特制边角料手办",
+      "desc": "今日热点：黄仁勋遭董事会罢免主要原因曝光；《GTA6》首发收入 37.9 亿美元，超《复联 4》总票房；马斯克收到上海工厂员工特制边角料手办",
+      "tag": "数据",
+      "time": "今日",
+      "source": "http://www.geekpark.net/news/374300"
+    }
+  ],
   "topicIdeas": [
     {
-      "title": "“奶茶第一股”的翻红账本",
-      "desc": "今日热点：“奶茶第一股”的翻红账本",
-      "tag": "流量",
+      "title": "AI，没有抛弃小城商家",
+      "desc": "今日热点：AI，没有抛弃小城商家",
+      "tag": "数据",
+      "type": "topic",
+      "category": "photo",
+      "time": "今日推荐"
+    },
+    {
+      "title": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
+      "desc": "今日热点：体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
+      "tag": "用户",
       "type": "topic",
       "category": "trend",
+      "time": "今日推荐"
+    },
+    {
+      "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
+      "desc": "今日热点：千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
+      "tag": "大促",
+      "type": "topic",
+      "category": "photo",
       "time": "今日推荐"
     },
     {
@@ -101,31 +153,22 @@ window.DAILY_FEED = {
       "type": "topic",
       "category": "trend",
       "time": "今日推荐"
-    },
-    {
-      "title": "给 Gemini 道歉，请自觉排队",
-      "desc": "今日热点：给 Gemini 道歉，请自觉排队",
-      "tag": "综合",
-      "type": "topic",
-      "category": "trend",
-      "time": "今日推荐"
-    },
-    {
-      "title": "理想造了一颗登上台积电讲台的芯片，却希望你在开车时彻底忘掉它",
-      "desc": "今日热点：理想造了一颗登上台积电讲台的芯片，却希望你在开车时彻底忘掉它",
-      "tag": "综合",
-      "type": "topic",
-      "category": "trend",
-      "time": "今日推荐"
     }
   ],
   "competitorNews": [
     {
-      "title": "【数智周报】 Anthropic敲响纳斯达克开市钟，创史上最大规模IPO纪录；美国限制远程获取AI算力，海外数据中心出租算力须许可；DeepSeek第二轮融资落地",
-      "desc": "今日热点：【数智周报】 Anthropic敲响纳斯达克开市钟，创史上最大规模IPO纪录；美国限制远程获取AI算力，海外数据中心出租算力须许可；DeepSeek第二轮融资落地",
-      "tag": "融资",
+      "title": "Anthropic 启动 IPO 路演，创始人将套现 17.5 亿美元；谷歌最强 AI 模型正式开放；任天堂招新：经典游戏保存员",
+      "desc": "今日热点：Anthropic 启动 IPO 路演，创始人将套现 17.5 亿美元；谷歌最强 AI 模型正式开放；任天堂招新：经典游戏保存员",
+      "tag": "上市",
       "time": "今日",
-      "source": "https://www.tmtpost.com/8213535.html"
+      "source": "http://www.geekpark.net/news/373796"
+    },
+    {
+      "title": "AI 录音硬件卖的是时间差，窗口可能只剩半年",
+      "desc": "今日热点：AI 录音硬件卖的是时间差，窗口可能只剩半年",
+      "tag": "字节",
+      "time": "今日",
+      "source": "http://www.geekpark.net/news/373946"
     },
     {
       "title": "早报｜曝Claude证明黎曼猜想，陶哲轩回应/余承东更正发布会表述：开车不能睡觉/五月天公布Vision Pro演唱会，Apple Store可预约体验",
@@ -140,18 +183,25 @@ window.DAILY_FEED = {
       "tag": "上市",
       "time": "今日",
       "source": "https://www.ifanr.com/1690375?utm_source=rss&utm_medium=rss&utm_campaign="
+    },
+    {
+      "title": "主播糟蹋千斤苹果仅赔6000元",
+      "desc": "今日热点：主播糟蹋千斤苹果仅赔6000元",
+      "tag": "主播",
+      "time": "今日",
+      "source": ""
     }
   ],
   "contentMaterials": [
     {
-      "source": "“奶茶第一股”的翻红账本",
-      "hook": "你知道吗？“奶茶第一股”的翻红账本，背后藏着电商人必须看懂的信号。",
+      "source": "AI，没有抛弃小城商家",
+      "hook": "你知道吗？AI，没有抛弃小城商家，背后藏着电商人必须看懂的信号。",
       "angle": "从商家实战角度拆解这个热点对运营的影响",
       "script": [
         {
           "shot": "开场",
           "visual": "热点数据截图",
-          "voiceover": "今天聊“奶茶第一股”的翻红账本，这事跟每个做电商的都有关系。"
+          "voiceover": "今天聊AI，没有抛弃小城商家，这事跟每个做电商的都有关系。"
         },
         {
           "shot": "拆解",
@@ -165,11 +215,67 @@ window.DAILY_FEED = {
         }
       ],
       "keyPoints": [
-        "核心：“奶茶第一股”的翻红账本",
+        "核心：AI，没有抛弃小城商家",
+        "趋势：平台正在加码这个方向"
+      ],
+      "cta": "关注我，每天更新电商+AI的实战干货。",
+      "category": "photo"
+    },
+    {
+      "source": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
+      "hook": "你知道吗？体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子，背后藏着电商人必须看懂的信号。",
+      "angle": "从商家实战角度拆解这个热点对运营的影响",
+      "script": [
+        {
+          "shot": "开场",
+          "visual": "热点数据截图",
+          "voiceover": "今天聊体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子，这事跟每个做电商的都有关系。"
+        },
+        {
+          "shot": "拆解",
+          "visual": "要点列表",
+          "voiceover": "三个关键点你必须知道……"
+        },
+        {
+          "shot": "落地",
+          "visual": "操作步骤",
+          "voiceover": "具体怎么用，我给你拆成三步走。"
+        }
+      ],
+      "keyPoints": [
+        "核心：体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
         "趋势：平台正在加码这个方向"
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
       "category": "trend"
+    },
+    {
+      "source": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
+      "hook": "你知道吗？千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了，背后藏着电商人必须看懂的信号。",
+      "angle": "从商家实战角度拆解这个热点对运营的影响",
+      "script": [
+        {
+          "shot": "开场",
+          "visual": "热点数据截图",
+          "voiceover": "今天聊千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了，这事跟每个做电商的都有关系。"
+        },
+        {
+          "shot": "拆解",
+          "visual": "要点列表",
+          "voiceover": "三个关键点你必须知道……"
+        },
+        {
+          "shot": "落地",
+          "visual": "操作步骤",
+          "voiceover": "具体怎么用，我给你拆成三步走。"
+        }
+      ],
+      "keyPoints": [
+        "核心：千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
+        "趋势：平台正在加码这个方向"
+      ],
+      "cta": "关注我，每天更新电商+AI的实战干货。",
+      "category": "photo"
     },
     {
       "source": "奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」",
@@ -222,62 +328,6 @@ window.DAILY_FEED = {
       ],
       "keyPoints": [
         "核心：伟大的 GTA 6，「不好玩」的 GTA 6",
-        "趋势：平台正在加码这个方向"
-      ],
-      "cta": "关注我，每天更新电商+AI的实战干货。",
-      "category": "trend"
-    },
-    {
-      "source": "给 Gemini 道歉，请自觉排队",
-      "hook": "你知道吗？给 Gemini 道歉，请自觉排队，背后藏着电商人必须看懂的信号。",
-      "angle": "从商家实战角度拆解这个热点对运营的影响",
-      "script": [
-        {
-          "shot": "开场",
-          "visual": "热点数据截图",
-          "voiceover": "今天聊给 Gemini 道歉，请自觉排队，这事跟每个做电商的都有关系。"
-        },
-        {
-          "shot": "拆解",
-          "visual": "要点列表",
-          "voiceover": "三个关键点你必须知道……"
-        },
-        {
-          "shot": "落地",
-          "visual": "操作步骤",
-          "voiceover": "具体怎么用，我给你拆成三步走。"
-        }
-      ],
-      "keyPoints": [
-        "核心：给 Gemini 道歉，请自觉排队",
-        "趋势：平台正在加码这个方向"
-      ],
-      "cta": "关注我，每天更新电商+AI的实战干货。",
-      "category": "trend"
-    },
-    {
-      "source": "理想造了一颗登上台积电讲台的芯片，却希望你在开车时彻底忘掉它",
-      "hook": "你知道吗？理想造了一颗登上台积电讲台的芯片，却希望你在开车时彻底忘掉它，背后藏着电商人必须看懂的信号。",
-      "angle": "从商家实战角度拆解这个热点对运营的影响",
-      "script": [
-        {
-          "shot": "开场",
-          "visual": "热点数据截图",
-          "voiceover": "今天聊理想造了一颗登上台积电讲台的芯片，却希望你在开车时彻底忘掉它，这事跟每个做电商的都有关系。"
-        },
-        {
-          "shot": "拆解",
-          "visual": "要点列表",
-          "voiceover": "三个关键点你必须知道……"
-        },
-        {
-          "shot": "落地",
-          "visual": "操作步骤",
-          "voiceover": "具体怎么用，我给你拆成三步走。"
-        }
-      ],
-      "keyPoints": [
-        "核心：理想造了一颗登上台积电讲台的芯片，却希望你在开车时彻底忘掉它",
         "趋势：平台正在加码这个方向"
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
