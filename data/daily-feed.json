@@ -1,19 +1,19 @@
 {
-  "lastUpdate": "2026-11-22 02:57",
+  "lastUpdate": "2026-11-22 14:02",
   "hotTopics": [
-    {
-      "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
-      "desc": "今日热点：千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
-      "tag": "大促",
-      "time": "今日",
-      "source": "http://www.geekpark.net/news/373760"
-    },
     {
       "title": "奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」",
       "desc": "今日热点：奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」",
       "tag": "综合",
       "time": "今日",
       "source": "https://www.ifanr.com/1690546?utm_source=rss&utm_medium=rss&utm_campaign="
+    },
+    {
+      "title": "伟大的 GTA 6，「不好玩」的 GTA 6",
+      "desc": "今日热点：伟大的 GTA 6，「不好玩」的 GTA 6",
+      "tag": "综合",
+      "time": "今日",
+      "source": "https://www.ifanr.com/1690801?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
       "title": "给 Gemini 道歉，请自觉排队",
@@ -39,95 +39,43 @@
   ],
   "aiTools": [
     {
-      "title": "当美国无法建设数据中心，会对 AI 产生怎样的冲击",
-      "desc": "今日热点：当美国无法建设数据中心，会对 AI 产生怎样的冲击",
+      "title": "Edge AI Daily 早报（11月22日）",
+      "desc": "今日热点：Edge AI Daily 早报（11月22日）",
       "tag": "AI",
       "time": "今日",
-      "source": "http://www.geekpark.net/news/373816"
+      "source": "https://www.tmtpost.com/8213684.html"
     },
     {
-      "title": "「北美大豆包」谷歌，终于杀回 AI 牌桌中央",
-      "desc": "今日热点：「北美大豆包」谷歌，终于杀回 AI 牌桌中央",
-      "tag": "AI",
+      "title": "早报｜GTA6开售，评分破纪录/大疆多款相机涨价/豆包工作三个月日活破800万",
+      "desc": "今日热点：早报｜GTA6开售，评分破纪录/大疆多款相机涨价/豆包工作三个月日活破800万",
+      "tag": "豆包",
       "time": "今日",
-      "source": "http://www.geekpark.net/news/374196"
+      "source": "https://www.ifanr.com/1690255?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
-      "title": "跑分狂飙，实测翻车，刚发的 GPT-6.2 暴露了 OpenAI 的软肋",
-      "desc": "今日热点：跑分狂飙，实测翻车，刚发的 GPT-6.2 暴露了 OpenAI 的软肋",
+      "title": "早报｜苹果招人打造「接管电脑」的AI智能体/史上最大IPO，Anthropic上市/华为官宣Mate 90 Air主打轻薄",
+      "desc": "今日热点：早报｜苹果招人打造「接管电脑」的AI智能体/史上最大IPO，Anthropic上市/华为官宣Mate 90 Air主打轻薄",
       "tag": "AI",
       "time": "今日",
-      "source": "http://www.geekpark.net/news/374175"
+      "source": "https://www.ifanr.com/1690473?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
-      "title": "李彦宏定义 AI 下一个十年，智能组织是「新厂房」",
-      "desc": "今日热点：李彦宏定义 AI 下一个十年，智能组织是「新厂房」",
+      "title": "首款鸿蒙 AI 手机发布：华为全新子品牌 OSTA 星芒有一个「增援未来计划」",
+      "desc": "今日热点：首款鸿蒙 AI 手机发布：华为全新子品牌 OSTA 星芒有一个「增援未来计划」",
       "tag": "AI",
       "time": "今日",
-      "source": "http://www.geekpark.net/news/373937"
+      "source": "https://www.ifanr.com/1690642?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
-      "title": "黄仁勋承认「婚外情」，英伟达启动调查；ChatGPT 突现封号风波，200 美元 Pro 用户也遭殃；腾讯姚顺雨谈「AI 公司护城河」：在产品层，而不是模型层",
-      "desc": "今日热点：黄仁勋承认「婚外情」，英伟达启动调查；ChatGPT 突现封号风波，200 美元 Pro 用户也遭殃；腾讯姚顺雨谈「AI 公司护城河」：在产品层，而不是模型层",
+      "title": "美股一夜崩盘，AI 泡沫真要破了？",
+      "desc": "今日热点：美股一夜崩盘，AI 泡沫真要破了？",
       "tag": "AI",
       "time": "今日",
-      "source": "http://www.geekpark.net/news/373687"
+      "source": "https://www.ifanr.com/1690789?utm_source=rss&utm_medium=rss&utm_campaign="
     }
   ],
-  "insights": [
-    {
-      "title": "ChatGPT 占全球 AI 聊天流量超 81%；iOS 27.3 曝光 Siri「个人记忆系统」；传玛莎拉蒂+尊界合作新车曝光｜极客早知道",
-      "desc": "今日热点：ChatGPT 占全球 AI 聊天流量超 81%；iOS 27.3 曝光 Siri「个人记忆系统」；传玛莎拉蒂+尊界合作新车曝光｜极客早知道",
-      "tag": "数据",
-      "time": "今日",
-      "source": "http://www.geekpark.net/news/373736"
-    },
-    {
-      "title": "传小米联手 AMG 之父，打造极致性能车；SpaceX 首次实现筷子夹飞船；「苹果最暗产品」诞生",
-      "desc": "今日热点：传小米联手 AMG 之父，打造极致性能车；SpaceX 首次实现筷子夹飞船；「苹果最暗产品」诞生",
-      "tag": "数据",
-      "time": "今日",
-      "source": "http://www.geekpark.net/news/373993"
-    },
-    {
-      "title": "一颗植物工厂草莓，离你的果盘还有多远？多多农研拉近现场",
-      "desc": "今日热点：一颗植物工厂草莓，离你的果盘还有多远？多多农研拉近现场",
-      "tag": "数据",
-      "time": "今日",
-      "source": "http://www.geekpark.net/news/373715"
-    },
-    {
-      "title": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
-      "desc": "今日热点：体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
-      "tag": "用户",
-      "time": "今日",
-      "source": "http://www.geekpark.net/news/373860"
-    },
-    {
-      "title": "AI，没有抛弃小城商家",
-      "desc": "今日热点：AI，没有抛弃小城商家",
-      "tag": "数据",
-      "time": "今日",
-      "source": "http://www.geekpark.net/news/374101"
-    }
-  ],
+  "insights": [],
   "topicIdeas": [
-    {
-      "title": "ChatGPT 占全球 AI 聊天流量超 81%；iOS 27.3 曝光 Siri「个人记忆系统」；传玛莎拉蒂+尊界合作新车曝光｜极客早知道",
-      "desc": "今日热点：ChatGPT 占全球 AI 聊天流量超 81%；iOS 27.3 曝光 Siri「个人记忆系统」；传玛莎拉蒂+尊界合作新车曝光｜极客早知道",
-      "tag": "数据",
-      "type": "topic",
-      "category": "photo",
-      "time": "今日推荐"
-    },
-    {
-      "title": "AI，没有抛弃小城商家",
-      "desc": "今日热点：AI，没有抛弃小城商家",
-      "tag": "数据",
-      "type": "topic",
-      "category": "photo",
-      "time": "今日推荐"
-    },
     {
       "title": "“奶茶第一股”的翻红账本",
       "desc": "今日热点：“奶茶第一股”的翻红账本",
@@ -137,37 +85,39 @@
       "time": "今日推荐"
     },
     {
-      "title": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
-      "desc": "今日热点：体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
-      "tag": "用户",
+      "title": "奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」",
+      "desc": "今日热点：奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」",
+      "tag": "综合",
       "type": "topic",
       "category": "trend",
       "time": "今日推荐"
     },
     {
-      "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
-      "desc": "今日热点：千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
-      "tag": "大促",
+      "title": "伟大的 GTA 6，「不好玩」的 GTA 6",
+      "desc": "今日热点：伟大的 GTA 6，「不好玩」的 GTA 6",
+      "tag": "综合",
       "type": "topic",
-      "category": "photo",
+      "category": "trend",
+      "time": "今日推荐"
+    },
+    {
+      "title": "给 Gemini 道歉，请自觉排队",
+      "desc": "今日热点：给 Gemini 道歉，请自觉排队",
+      "tag": "综合",
+      "type": "topic",
+      "category": "trend",
+      "time": "今日推荐"
+    },
+    {
+      "title": "理想造了一颗登上台积电讲台的芯片，却希望你在开车时彻底忘掉它",
+      "desc": "今日热点：理想造了一颗登上台积电讲台的芯片，却希望你在开车时彻底忘掉它",
+      "tag": "综合",
+      "type": "topic",
+      "category": "trend",
       "time": "今日推荐"
     }
   ],
   "competitorNews": [
-    {
-      "title": "Anthropic 启动 IPO 路演，创始人将套现 17.5 亿美元；谷歌最强 AI 模型正式开放；任天堂招新：经典游戏保存员",
-      "desc": "今日热点：Anthropic 启动 IPO 路演，创始人将套现 17.5 亿美元；谷歌最强 AI 模型正式开放；任天堂招新：经典游戏保存员",
-      "tag": "上市",
-      "time": "今日",
-      "source": "http://www.geekpark.net/news/373796"
-    },
-    {
-      "title": "AI 录音硬件卖的是时间差，窗口可能只剩半年",
-      "desc": "今日热点：AI 录音硬件卖的是时间差，窗口可能只剩半年",
-      "tag": "字节",
-      "time": "今日",
-      "source": "http://www.geekpark.net/news/373946"
-    },
     {
       "title": "【数智周报】 Anthropic敲响纳斯达克开市钟，创史上最大规模IPO纪录；美国限制远程获取AI算力，海外数据中心出租算力须许可；DeepSeek第二轮融资落地",
       "desc": "今日热点：【数智周报】 Anthropic敲响纳斯达克开市钟，创史上最大规模IPO纪录；美国限制远程获取AI算力，海外数据中心出租算力须许可；DeepSeek第二轮融资落地",
@@ -191,62 +141,6 @@
     }
   ],
   "contentMaterials": [
-    {
-      "source": "ChatGPT 占全球 AI 聊天流量超 81%；iOS 27.3 曝光 Siri「个人记忆系统」；传玛莎拉蒂+尊界合作新车曝光｜极客早知道",
-      "hook": "你知道吗？ChatGPT 占全球 AI 聊天流量超 81%；iOS 27.3 曝光 Siri「个人记忆系统」；传玛莎拉蒂+尊界合作新车曝光｜极客早知道，背后藏着电商人必须看懂的信号。",
-      "angle": "从商家实战角度拆解这个热点对运营的影响",
-      "script": [
-        {
-          "shot": "开场",
-          "visual": "热点数据截图",
-          "voiceover": "今天聊ChatGPT 占全球 AI 聊天流量超 81%；iOS 27.3 曝光 Siri「个人记忆系统」；传玛莎拉蒂+尊界合作新车曝光｜极客早知道，这事跟每个做电商的都有关系。"
-        },
-        {
-          "shot": "拆解",
-          "visual": "要点列表",
-          "voiceover": "三个关键点你必须知道……"
-        },
-        {
-          "shot": "落地",
-          "visual": "操作步骤",
-          "voiceover": "具体怎么用，我给你拆成三步走。"
-        }
-      ],
-      "keyPoints": [
-        "核心：ChatGPT 占全球 AI 聊天流量超 81%；iOS 27.3 曝光 Siri「个人记忆系统」；传玛莎拉蒂+尊界合作新车曝光｜极客早知道",
-        "趋势：平台正在加码这个方向"
-      ],
-      "cta": "关注我，每天更新电商+AI的实战干货。",
-      "category": "photo"
-    },
-    {
-      "source": "AI，没有抛弃小城商家",
-      "hook": "你知道吗？AI，没有抛弃小城商家，背后藏着电商人必须看懂的信号。",
-      "angle": "从商家实战角度拆解这个热点对运营的影响",
-      "script": [
-        {
-          "shot": "开场",
-          "visual": "热点数据截图",
-          "voiceover": "今天聊AI，没有抛弃小城商家，这事跟每个做电商的都有关系。"
-        },
-        {
-          "shot": "拆解",
-          "visual": "要点列表",
-          "voiceover": "三个关键点你必须知道……"
-        },
-        {
-          "shot": "落地",
-          "visual": "操作步骤",
-          "voiceover": "具体怎么用，我给你拆成三步走。"
-        }
-      ],
-      "keyPoints": [
-        "核心：AI，没有抛弃小城商家",
-        "趋势：平台正在加码这个方向"
-      ],
-      "cta": "关注我，每天更新电商+AI的实战干货。",
-      "category": "photo"
-    },
     {
       "source": "“奶茶第一股”的翻红账本",
       "hook": "你知道吗？“奶茶第一股”的翻红账本，背后藏着电商人必须看懂的信号。",
@@ -276,14 +170,14 @@
       "category": "trend"
     },
     {
-      "source": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
-      "hook": "你知道吗？体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子，背后藏着电商人必须看懂的信号。",
+      "source": "奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」",
+      "hook": "你知道吗？奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」，背后藏着电商人必须看懂的信号。",
       "angle": "从商家实战角度拆解这个热点对运营的影响",
       "script": [
         {
           "shot": "开场",
           "visual": "热点数据截图",
-          "voiceover": "今天聊体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子，这事跟每个做电商的都有关系。"
+          "voiceover": "今天聊奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」，这事跟每个做电商的都有关系。"
         },
         {
           "shot": "拆解",
@@ -297,21 +191,21 @@
         }
       ],
       "keyPoints": [
-        "核心：体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
+        "核心：奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」",
         "趋势：平台正在加码这个方向"
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
       "category": "trend"
     },
     {
-      "source": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
-      "hook": "你知道吗？千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了，背后藏着电商人必须看懂的信号。",
+      "source": "伟大的 GTA 6，「不好玩」的 GTA 6",
+      "hook": "你知道吗？伟大的 GTA 6，「不好玩」的 GTA 6，背后藏着电商人必须看懂的信号。",
       "angle": "从商家实战角度拆解这个热点对运营的影响",
       "script": [
         {
           "shot": "开场",
           "visual": "热点数据截图",
-          "voiceover": "今天聊千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了，这事跟每个做电商的都有关系。"
+          "voiceover": "今天聊伟大的 GTA 6，「不好玩」的 GTA 6，这事跟每个做电商的都有关系。"
         },
         {
           "shot": "拆解",
@@ -325,11 +219,67 @@
         }
       ],
       "keyPoints": [
-        "核心：千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
+        "核心：伟大的 GTA 6，「不好玩」的 GTA 6",
         "趋势：平台正在加码这个方向"
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
-      "category": "photo"
+      "category": "trend"
+    },
+    {
+      "source": "给 Gemini 道歉，请自觉排队",
+      "hook": "你知道吗？给 Gemini 道歉，请自觉排队，背后藏着电商人必须看懂的信号。",
+      "angle": "从商家实战角度拆解这个热点对运营的影响",
+      "script": [
+        {
+          "shot": "开场",
+          "visual": "热点数据截图",
+          "voiceover": "今天聊给 Gemini 道歉，请自觉排队，这事跟每个做电商的都有关系。"
+        },
+        {
+          "shot": "拆解",
+          "visual": "要点列表",
+          "voiceover": "三个关键点你必须知道……"
+        },
+        {
+          "shot": "落地",
+          "visual": "操作步骤",
+          "voiceover": "具体怎么用，我给你拆成三步走。"
+        }
+      ],
+      "keyPoints": [
+        "核心：给 Gemini 道歉，请自觉排队",
+        "趋势：平台正在加码这个方向"
+      ],
+      "cta": "关注我，每天更新电商+AI的实战干货。",
+      "category": "trend"
+    },
+    {
+      "source": "理想造了一颗登上台积电讲台的芯片，却希望你在开车时彻底忘掉它",
+      "hook": "你知道吗？理想造了一颗登上台积电讲台的芯片，却希望你在开车时彻底忘掉它，背后藏着电商人必须看懂的信号。",
+      "angle": "从商家实战角度拆解这个热点对运营的影响",
+      "script": [
+        {
+          "shot": "开场",
+          "visual": "热点数据截图",
+          "voiceover": "今天聊理想造了一颗登上台积电讲台的芯片，却希望你在开车时彻底忘掉它，这事跟每个做电商的都有关系。"
+        },
+        {
+          "shot": "拆解",
+          "visual": "要点列表",
+          "voiceover": "三个关键点你必须知道……"
+        },
+        {
+          "shot": "落地",
+          "visual": "操作步骤",
+          "voiceover": "具体怎么用，我给你拆成三步走。"
+        }
+      ],
+      "keyPoints": [
+        "核心：理想造了一颗登上台积电讲台的芯片，却希望你在开车时彻底忘掉它",
+        "趋势：平台正在加码这个方向"
+      ],
+      "cta": "关注我，每天更新电商+AI的实战干货。",
+      "category": "trend"
     }
   ],
   "llmStatus": {
