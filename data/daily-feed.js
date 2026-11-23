@@ -1,22 +1,8 @@
 // 电商+AI 内容库 · 每日动态 Feed（自动生成，勿手改）
-// 生成时间: 2026-11-23 03:18 (Asia/Shanghai)
+// 生成时间: 2026-11-23 14:55 (Asia/Shanghai)
 window.DAILY_FEED = {
-  "lastUpdate": "2026-11-23 03:18",
+  "lastUpdate": "2026-11-23 14:55",
   "hotTopics": [
-    {
-      "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
-      "desc": "今日热点：千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
-      "tag": "大促",
-      "time": "今日",
-      "source": "http://www.geekpark.net/news/373760"
-    },
-    {
-      "title": "奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」",
-      "desc": "今日热点：奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」",
-      "tag": "综合",
-      "time": "今日",
-      "source": "https://www.ifanr.com/1690546?utm_source=rss&utm_medium=rss&utm_campaign="
-    },
     {
       "title": "伟大的 GTA 6，「不好玩」的 GTA 6",
       "desc": "今日热点：伟大的 GTA 6，「不好玩」的 GTA 6",
@@ -37,6 +23,20 @@ window.DAILY_FEED = {
       "tag": "综合",
       "time": "今日",
       "source": "https://www.ifanr.com/1690596?utm_source=rss&utm_medium=rss&utm_campaign="
+    },
+    {
+      "title": "比亚迪发布折叠方向盘！首搭方程豹钛 9，27.99 万元起！",
+      "desc": "今日热点：比亚迪发布折叠方向盘！首搭方程豹钛 9，27.99 万元起！",
+      "tag": "综合",
+      "time": "今日",
+      "source": "https://www.ifanr.com/1690430?utm_source=rss&utm_medium=rss&utm_campaign="
+    },
+    {
+      "title": "今年是阔屏的元年，阔屏是手机的今后十年",
+      "desc": "今日热点：今年是阔屏的元年，阔屏是手机的今后十年",
+      "tag": "综合",
+      "time": "今日",
+      "source": "https://www.ifanr.com/1690322?utm_source=rss&utm_medium=rss&utm_campaign="
     }
   ],
   "aiTools": [
@@ -78,6 +78,13 @@ window.DAILY_FEED = {
   ],
   "insights": [
     {
+      "title": "OpenAI 首席科学家：AI 最早明年加速进化；B 站开始清理「大肥鱼」泛滥；瘫痪患者用脑机打 GTA6｜极客早知道",
+      "desc": "今日热点：OpenAI 首席科学家：AI 最早明年加速进化；B 站开始清理「大肥鱼」泛滥；瘫痪患者用脑机打 GTA6｜极客早知道",
+      "tag": "数据",
+      "time": "今日",
+      "source": "http://www.geekpark.net/news/374304"
+    },
+    {
       "title": "传小米联手 AMG 之父，打造极致性能车；SpaceX 首次实现筷子夹飞船；「苹果最暗产品」诞生",
       "desc": "今日热点：传小米联手 AMG 之父，打造极致性能车；SpaceX 首次实现筷子夹飞船；「苹果最暗产品」诞生",
       "tag": "数据",
@@ -104,13 +111,6 @@ window.DAILY_FEED = {
       "tag": "数据",
       "time": "今日",
       "source": "http://www.geekpark.net/news/374302"
-    },
-    {
-      "title": "黄仁勋遭董事会罢免主要原因曝光；《GTA6》首发收入 37.9 亿美元，超《复联 4》总票房；马斯克收到上海工厂员工特制边角料手办",
-      "desc": "今日热点：黄仁勋遭董事会罢免主要原因曝光；《GTA6》首发收入 37.9 亿美元，超《复联 4》总票房；马斯克收到上海工厂员工特制边角料手办",
-      "tag": "数据",
-      "time": "今日",
-      "source": "http://www.geekpark.net/news/374300"
     }
   ],
   "topicIdeas": [
@@ -131,17 +131,9 @@ window.DAILY_FEED = {
       "time": "今日推荐"
     },
     {
-      "title": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
-      "desc": "今日热点：千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
-      "tag": "大促",
-      "type": "topic",
-      "category": "photo",
-      "time": "今日推荐"
-    },
-    {
-      "title": "奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」",
-      "desc": "今日热点：奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」",
-      "tag": "综合",
+      "title": "【钛晨报】A股利好！交易所打出稳市“组合拳”，事关两融、降费、创业板；积存金价格跌至“7字头”，银行纷纷提示贵金属市场风险；量子计算机“高速内存”全球首次真机实现",
+      "desc": "今日热点：【钛晨报】A股利好！交易所打出稳市“组合拳”，事关两融、降费、创业板；积存金价格跌至“7字头”，银行纷纷提示贵金属市场风险；量子计算机“高速内存”全球首次真机实现",
+      "tag": "市场",
       "type": "topic",
       "category": "trend",
       "time": "今日推荐"
@@ -149,6 +141,14 @@ window.DAILY_FEED = {
     {
       "title": "伟大的 GTA 6，「不好玩」的 GTA 6",
       "desc": "今日热点：伟大的 GTA 6，「不好玩」的 GTA 6",
+      "tag": "综合",
+      "type": "topic",
+      "category": "trend",
+      "time": "今日推荐"
+    },
+    {
+      "title": "给 Gemini 道歉，请自觉排队",
+      "desc": "今日热点：给 Gemini 道歉，请自觉排队",
       "tag": "综合",
       "type": "topic",
       "category": "trend",
@@ -183,13 +183,6 @@ window.DAILY_FEED = {
       "tag": "上市",
       "time": "今日",
       "source": "https://www.ifanr.com/1690375?utm_source=rss&utm_medium=rss&utm_campaign="
-    },
-    {
-      "title": "主播糟蹋千斤苹果仅赔6000元",
-      "desc": "今日热点：主播糟蹋千斤苹果仅赔6000元",
-      "tag": "主播",
-      "time": "今日",
-      "source": ""
     }
   ],
   "contentMaterials": [
@@ -250,14 +243,14 @@ window.DAILY_FEED = {
       "category": "trend"
     },
     {
-      "source": "千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
-      "hook": "你知道吗？千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了，背后藏着电商人必须看懂的信号。",
+      "source": "【钛晨报】A股利好！交易所打出稳市“组合拳”，事关两融、降费、创业板；积存金价格跌至“7字头”，银行纷纷提示贵金属市场风险；量子计算机“高速内存”全球首次真机实现",
+      "hook": "你知道吗？【钛晨报】A股利好！交易所打出稳市“组合拳”，事关两融、降费、创业板；积存金价格跌至“7字头”，银行纷纷提示贵金属市场风险；量子计算机“高速内存”全球首次真机实现，背后藏着电商人必须看懂的信号。",
       "angle": "从商家实战角度拆解这个热点对运营的影响",
       "script": [
         {
           "shot": "开场",
           "visual": "热点数据截图",
-          "voiceover": "今天聊千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了，这事跟每个做电商的都有关系。"
+          "voiceover": "今天聊【钛晨报】A股利好！交易所打出稳市“组合拳”，事关两融、降费、创业板；积存金价格跌至“7字头”，银行纷纷提示贵金属市场风险；量子计算机“高速内存”全球首次真机实现，这事跟每个做电商的都有关系。"
         },
         {
           "shot": "拆解",
@@ -271,35 +264,7 @@ window.DAILY_FEED = {
         }
       ],
       "keyPoints": [
-        "核心：千问办公押注 Team Agent，企业 AI 的流水线时刻真的来了",
-        "趋势：平台正在加码这个方向"
-      ],
-      "cta": "关注我，每天更新电商+AI的实战干货。",
-      "category": "photo"
-    },
-    {
-      "source": "奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」",
-      "hook": "你知道吗？奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」，背后藏着电商人必须看懂的信号。",
-      "angle": "从商家实战角度拆解这个热点对运营的影响",
-      "script": [
-        {
-          "shot": "开场",
-          "visual": "热点数据截图",
-          "voiceover": "今天聊奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」，这事跟每个做电商的都有关系。"
-        },
-        {
-          "shot": "拆解",
-          "visual": "要点列表",
-          "voiceover": "三个关键点你必须知道……"
-        },
-        {
-          "shot": "落地",
-          "visual": "操作步骤",
-          "voiceover": "具体怎么用，我给你拆成三步走。"
-        }
-      ],
-      "keyPoints": [
-        "核心：奔驰新 E 级车机上手！响应速度超越新势力，唯独少了点「奔驰味」",
+        "核心：【钛晨报】A股利好！交易所打出稳市“组合拳”，事关两融、降费、创业板；积存金价格跌至“7字头”，银行纷纷提示贵金属市场风险；量子计算机“高速内存”全球首次真机实现",
         "趋势：平台正在加码这个方向"
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
@@ -328,6 +293,34 @@ window.DAILY_FEED = {
       ],
       "keyPoints": [
         "核心：伟大的 GTA 6，「不好玩」的 GTA 6",
+        "趋势：平台正在加码这个方向"
+      ],
+      "cta": "关注我，每天更新电商+AI的实战干货。",
+      "category": "trend"
+    },
+    {
+      "source": "给 Gemini 道歉，请自觉排队",
+      "hook": "你知道吗？给 Gemini 道歉，请自觉排队，背后藏着电商人必须看懂的信号。",
+      "angle": "从商家实战角度拆解这个热点对运营的影响",
+      "script": [
+        {
+          "shot": "开场",
+          "visual": "热点数据截图",
+          "voiceover": "今天聊给 Gemini 道歉，请自觉排队，这事跟每个做电商的都有关系。"
+        },
+        {
+          "shot": "拆解",
+          "visual": "要点列表",
+          "voiceover": "三个关键点你必须知道……"
+        },
+        {
+          "shot": "落地",
+          "visual": "操作步骤",
+          "voiceover": "具体怎么用，我给你拆成三步走。"
+        }
+      ],
+      "keyPoints": [
+        "核心：给 Gemini 道歉，请自觉排队",
         "趋势：平台正在加码这个方向"
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
