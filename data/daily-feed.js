@@ -1,8 +1,15 @@
 // 电商+AI 内容库 · 每日动态 Feed（自动生成，勿手改）
-// 生成时间: 2026-11-23 14:55 (Asia/Shanghai)
+// 生成时间: 2026-11-24 07:40 (Asia/Shanghai)
 window.DAILY_FEED = {
-  "lastUpdate": "2026-11-23 14:55",
+  "lastUpdate": "2026-11-24 07:40",
   "hotTopics": [
+    {
+      "title": "利润增速降至 0.7%， 拼多多「申诉优赔」还要给商家补贴几十亿",
+      "desc": "今日热点：利润增速降至 0.7%， 拼多多「申诉优赔」还要给商家补贴几十亿",
+      "tag": "电商",
+      "time": "今日",
+      "source": "http://www.geekpark.net/news/374348"
+    },
     {
       "title": "伟大的 GTA 6，「不好玩」的 GTA 6",
       "desc": "今日热点：伟大的 GTA 6，「不好玩」的 GTA 6",
@@ -25,28 +32,14 @@ window.DAILY_FEED = {
       "source": "https://www.ifanr.com/1690596?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
-      "title": "比亚迪发布折叠方向盘！首搭方程豹钛 9，27.99 万元起！",
-      "desc": "今日热点：比亚迪发布折叠方向盘！首搭方程豹钛 9，27.99 万元起！",
+      "title": "自变量发布 WALL-API-1.0，主流榜单超越 Astra，扛起具身智能「预训练」的大旗",
+      "desc": "今日热点：自变量发布 WALL-API-1.0，主流榜单超越 Astra，扛起具身智能「预训练」的大旗",
       "tag": "综合",
       "time": "今日",
-      "source": "https://www.ifanr.com/1690430?utm_source=rss&utm_medium=rss&utm_campaign="
-    },
-    {
-      "title": "今年是阔屏的元年，阔屏是手机的今后十年",
-      "desc": "今日热点：今年是阔屏的元年，阔屏是手机的今后十年",
-      "tag": "综合",
-      "time": "今日",
-      "source": "https://www.ifanr.com/1690322?utm_source=rss&utm_medium=rss&utm_campaign="
+      "source": "https://www.ifanr.com/1691043?utm_source=rss&utm_medium=rss&utm_campaign="
     }
   ],
   "aiTools": [
-    {
-      "title": "当美国无法建设数据中心，会对 AI 产生怎样的冲击",
-      "desc": "今日热点：当美国无法建设数据中心，会对 AI 产生怎样的冲击",
-      "tag": "AI",
-      "time": "今日",
-      "source": "http://www.geekpark.net/news/373816"
-    },
     {
       "title": "重控制、轻渲染，达瓦科技的 AI 视频工业路线",
       "desc": "今日热点：重控制、轻渲染，达瓦科技的 AI 视频工业路线",
@@ -74,6 +67,13 @@ window.DAILY_FEED = {
       "tag": "AI",
       "time": "今日",
       "source": "http://www.geekpark.net/news/373937"
+    },
+    {
+      "title": "1.27 万亿美元，Anthropic 挂牌上市；吴泳铭：千问已在平头哥芯片训练下一代模型；苹果被曝自研 AI 智能体｜极客早知道",
+      "desc": "今日热点：1.27 万亿美元，Anthropic 挂牌上市；吴泳铭：千问已在平头哥芯片训练下一代模型；苹果被曝自研 AI 智能体｜极客早知道",
+      "tag": "AI",
+      "time": "今日",
+      "source": "http://www.geekpark.net/news/374235"
     }
   ],
   "insights": [
@@ -123,17 +123,25 @@ window.DAILY_FEED = {
       "time": "今日推荐"
     },
     {
-      "title": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
-      "desc": "今日热点：体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
-      "tag": "用户",
+      "title": "利润增速降至 0.7%， 拼多多「申诉优赔」还要给商家补贴几十亿",
+      "desc": "今日热点：利润增速降至 0.7%， 拼多多「申诉优赔」还要给商家补贴几十亿",
+      "tag": "电商",
       "type": "topic",
       "category": "trend",
       "time": "今日推荐"
     },
     {
-      "title": "【钛晨报】A股利好！交易所打出稳市“组合拳”，事关两融、降费、创业板；积存金价格跌至“7字头”，银行纷纷提示贵金属市场风险；量子计算机“高速内存”全球首次真机实现",
-      "desc": "今日热点：【钛晨报】A股利好！交易所打出稳市“组合拳”，事关两融、降费、创业板；积存金价格跌至“7字头”，银行纷纷提示贵金属市场风险；量子计算机“高速内存”全球首次真机实现",
-      "tag": "市场",
+      "title": "Alo中国首批线下体验店开业，想踩着Lululemon的流量上位",
+      "desc": "今日热点：Alo中国首批线下体验店开业，想踩着Lululemon的流量上位",
+      "tag": "流量",
+      "type": "topic",
+      "category": "trend",
+      "time": "今日推荐"
+    },
+    {
+      "title": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
+      "desc": "今日热点：体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
+      "tag": "用户",
       "type": "topic",
       "category": "trend",
       "time": "今日推荐"
@@ -145,24 +153,9 @@ window.DAILY_FEED = {
       "type": "topic",
       "category": "trend",
       "time": "今日推荐"
-    },
-    {
-      "title": "给 Gemini 道歉，请自觉排队",
-      "desc": "今日热点：给 Gemini 道歉，请自觉排队",
-      "tag": "综合",
-      "type": "topic",
-      "category": "trend",
-      "time": "今日推荐"
     }
   ],
   "competitorNews": [
-    {
-      "title": "Anthropic 启动 IPO 路演，创始人将套现 17.5 亿美元；谷歌最强 AI 模型正式开放；任天堂招新：经典游戏保存员",
-      "desc": "今日热点：Anthropic 启动 IPO 路演，创始人将套现 17.5 亿美元；谷歌最强 AI 模型正式开放；任天堂招新：经典游戏保存员",
-      "tag": "上市",
-      "time": "今日",
-      "source": "http://www.geekpark.net/news/373796"
-    },
     {
       "title": "AI 录音硬件卖的是时间差，窗口可能只剩半年",
       "desc": "今日热点：AI 录音硬件卖的是时间差，窗口可能只剩半年",
@@ -178,11 +171,18 @@ window.DAILY_FEED = {
       "source": "https://www.ifanr.com/1690759?utm_source=rss&utm_medium=rss&utm_campaign="
     },
     {
-      "title": "刚刚，Anthropic 敲钟上市！史上最大IPO却让硅谷吵翻了",
-      "desc": "今日热点：刚刚，Anthropic 敲钟上市！史上最大IPO却让硅谷吵翻了",
+      "title": "31.98 万元起！享界 V8 上市，比智界 V9 低 7 万还多了纯电版",
+      "desc": "今日热点：31.98 万元起！享界 V8 上市，比智界 V9 低 7 万还多了纯电版",
       "tag": "上市",
       "time": "今日",
-      "source": "https://www.ifanr.com/1690375?utm_source=rss&utm_medium=rss&utm_campaign="
+      "source": "https://www.ifanr.com/1691027?utm_source=rss&utm_medium=rss&utm_campaign="
+    },
+    {
+      "title": "800万对1000万，腾讯字节又在AI办公杠上了",
+      "desc": "今日热点：800万对1000万，腾讯字节又在AI办公杠上了",
+      "tag": "字节",
+      "time": "今日",
+      "source": "https://www.tmtpost.com/8214502.html"
     }
   ],
   "contentMaterials": [
@@ -215,6 +215,62 @@ window.DAILY_FEED = {
       "category": "photo"
     },
     {
+      "source": "利润增速降至 0.7%， 拼多多「申诉优赔」还要给商家补贴几十亿",
+      "hook": "你知道吗？利润增速降至 0.7%， 拼多多「申诉优赔」还要给商家补贴几十亿，背后藏着电商人必须看懂的信号。",
+      "angle": "从商家实战角度拆解这个热点对运营的影响",
+      "script": [
+        {
+          "shot": "开场",
+          "visual": "热点数据截图",
+          "voiceover": "今天聊利润增速降至 0.7%， 拼多多「申诉优赔」还要给商家补贴几十亿，这事跟每个做电商的都有关系。"
+        },
+        {
+          "shot": "拆解",
+          "visual": "要点列表",
+          "voiceover": "三个关键点你必须知道……"
+        },
+        {
+          "shot": "落地",
+          "visual": "操作步骤",
+          "voiceover": "具体怎么用，我给你拆成三步走。"
+        }
+      ],
+      "keyPoints": [
+        "核心：利润增速降至 0.7%， 拼多多「申诉优赔」还要给商家补贴几十亿",
+        "趋势：平台正在加码这个方向"
+      ],
+      "cta": "关注我，每天更新电商+AI的实战干货。",
+      "category": "trend"
+    },
+    {
+      "source": "Alo中国首批线下体验店开业，想踩着Lululemon的流量上位",
+      "hook": "你知道吗？Alo中国首批线下体验店开业，想踩着Lululemon的流量上位，背后藏着电商人必须看懂的信号。",
+      "angle": "从商家实战角度拆解这个热点对运营的影响",
+      "script": [
+        {
+          "shot": "开场",
+          "visual": "热点数据截图",
+          "voiceover": "今天聊Alo中国首批线下体验店开业，想踩着Lululemon的流量上位，这事跟每个做电商的都有关系。"
+        },
+        {
+          "shot": "拆解",
+          "visual": "要点列表",
+          "voiceover": "三个关键点你必须知道……"
+        },
+        {
+          "shot": "落地",
+          "visual": "操作步骤",
+          "voiceover": "具体怎么用，我给你拆成三步走。"
+        }
+      ],
+      "keyPoints": [
+        "核心：Alo中国首批线下体验店开业，想踩着Lululemon的流量上位",
+        "趋势：平台正在加码这个方向"
+      ],
+      "cta": "关注我，每天更新电商+AI的实战干货。",
+      "category": "trend"
+    },
+    {
       "source": "体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子",
       "hook": "你知道吗？体验「跟拍机器人」Beni：谁不想要一个不会喊累还会拍照的出行搭子，背后藏着电商人必须看懂的信号。",
       "angle": "从商家实战角度拆解这个热点对运营的影响",
@@ -243,34 +299,6 @@ window.DAILY_FEED = {
       "category": "trend"
     },
     {
-      "source": "【钛晨报】A股利好！交易所打出稳市“组合拳”，事关两融、降费、创业板；积存金价格跌至“7字头”，银行纷纷提示贵金属市场风险；量子计算机“高速内存”全球首次真机实现",
-      "hook": "你知道吗？【钛晨报】A股利好！交易所打出稳市“组合拳”，事关两融、降费、创业板；积存金价格跌至“7字头”，银行纷纷提示贵金属市场风险；量子计算机“高速内存”全球首次真机实现，背后藏着电商人必须看懂的信号。",
-      "angle": "从商家实战角度拆解这个热点对运营的影响",
-      "script": [
-        {
-          "shot": "开场",
-          "visual": "热点数据截图",
-          "voiceover": "今天聊【钛晨报】A股利好！交易所打出稳市“组合拳”，事关两融、降费、创业板；积存金价格跌至“7字头”，银行纷纷提示贵金属市场风险；量子计算机“高速内存”全球首次真机实现，这事跟每个做电商的都有关系。"
-        },
-        {
-          "shot": "拆解",
-          "visual": "要点列表",
-          "voiceover": "三个关键点你必须知道……"
-        },
-        {
-          "shot": "落地",
-          "visual": "操作步骤",
-          "voiceover": "具体怎么用，我给你拆成三步走。"
-        }
-      ],
-      "keyPoints": [
-        "核心：【钛晨报】A股利好！交易所打出稳市“组合拳”，事关两融、降费、创业板；积存金价格跌至“7字头”，银行纷纷提示贵金属市场风险；量子计算机“高速内存”全球首次真机实现",
-        "趋势：平台正在加码这个方向"
-      ],
-      "cta": "关注我，每天更新电商+AI的实战干货。",
-      "category": "trend"
-    },
-    {
       "source": "伟大的 GTA 6，「不好玩」的 GTA 6",
       "hook": "你知道吗？伟大的 GTA 6，「不好玩」的 GTA 6，背后藏着电商人必须看懂的信号。",
       "angle": "从商家实战角度拆解这个热点对运营的影响",
@@ -293,34 +321,6 @@ window.DAILY_FEED = {
       ],
       "keyPoints": [
         "核心：伟大的 GTA 6，「不好玩」的 GTA 6",
-        "趋势：平台正在加码这个方向"
-      ],
-      "cta": "关注我，每天更新电商+AI的实战干货。",
-      "category": "trend"
-    },
-    {
-      "source": "给 Gemini 道歉，请自觉排队",
-      "hook": "你知道吗？给 Gemini 道歉，请自觉排队，背后藏着电商人必须看懂的信号。",
-      "angle": "从商家实战角度拆解这个热点对运营的影响",
-      "script": [
-        {
-          "shot": "开场",
-          "visual": "热点数据截图",
-          "voiceover": "今天聊给 Gemini 道歉，请自觉排队，这事跟每个做电商的都有关系。"
-        },
-        {
-          "shot": "拆解",
-          "visual": "要点列表",
-          "voiceover": "三个关键点你必须知道……"
-        },
-        {
-          "shot": "落地",
-          "visual": "操作步骤",
-          "voiceover": "具体怎么用，我给你拆成三步走。"
-        }
-      ],
-      "keyPoints": [
-        "核心：给 Gemini 道歉，请自觉排队",
         "趋势：平台正在加码这个方向"
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
