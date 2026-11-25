@@ -1,7 +1,7 @@
 // 电商+AI 内容库 · 每日动态 Feed（自动生成，勿手改）
-// 生成时间: 2026-11-25 15:54 (Asia/Shanghai)
+// 生成时间: 2026-11-26 05:27 (Asia/Shanghai)
 window.DAILY_FEED = {
-  "lastUpdate": "2026-11-25 15:54",
+  "lastUpdate": "2026-11-26 05:27",
   "hotTopics": [
     {
       "title": "利润增速降至 0.7%， 拼多多「申诉优赔」还要给商家补贴几十亿",
