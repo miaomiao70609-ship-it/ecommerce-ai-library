@@ -1,7 +1,7 @@
 // 电商+AI 内容库 · 每日动态 Feed（自动生成，勿手改）
-// 生成时间: 2026-11-27 15:44 (Asia/Shanghai)
+// 生成时间: 2026-11-28 04:57 (Asia/Shanghai)
 window.DAILY_FEED = {
-  "lastUpdate": "2026-11-27 15:44",
+  "lastUpdate": "2026-11-28 04:57",
   "hotTopics": [
     {
       "title": "利润增速降至 0.7%， 拼多多「申诉优赔」还要给商家补贴几十亿",
@@ -11,32 +11,32 @@ window.DAILY_FEED = {
       "source": "http://www.geekpark.net/news/374348"
     },
     {
-      "title": "后排空间直逼迈巴赫！配置看齐六座旗舰，吉利银河 M8 预售价 19.98 万起",
-      "desc": "今日热点：后排空间直逼迈巴赫！配置看齐六座旗舰，吉利银河 M8 预售价 19.98 万起",
+      "title": "10.28 万元起，800V、后驱、原厂改装，零跑 Lafa5 想做一辆有趣的电动车丨广州车展",
+      "desc": "今日热点：10.28 万元起，800V、后驱、原厂改装，零跑 Lafa5 想做一辆有趣的电动车丨广州车展",
       "tag": "综合",
       "time": "今日",
-      "source": "https://www.ifanr.com/1695444?utm_source=rss&utm_medium=rss&utm_campaign"
+      "source": "https://www.ifanr.com/1695788?utm_source=rss&utm_medium=rss&utm_campaign"
     },
     {
-      "title": "华为全新一代巨鲸电池平台：电池安全，不能只看新车出厂的那一天",
-      "desc": "今日热点：华为全新一代巨鲸电池平台：电池安全，不能只看新车出厂的那一天",
-      "tag": "平台",
-      "time": "今日",
-      "source": "https://www.ifanr.com/1695738?utm_source=rss&utm_medium=rss&utm_campaign"
-    },
-    {
-      "title": "专访《影之刃零》梁其伟：我想让年轻人觉得，中国功夫很酷丨多样性公司",
-      "desc": "今日热点：专访《影之刃零》梁其伟：我想让年轻人觉得，中国功夫很酷丨多样性公司",
+      "title": "从「中国特供」变全球旗舰，搭载 Momenta 智驾的本田冠道来了｜广州车展",
+      "desc": "今日热点：从「中国特供」变全球旗舰，搭载 Momenta 智驾的本田冠道来了｜广州车展",
       "tag": "综合",
       "time": "今日",
-      "source": "https://www.ifanr.com/1695256?utm_source=rss&utm_medium=rss&utm_campaign"
+      "source": "https://www.ifanr.com/1695948?utm_source=rss&utm_medium=rss&utm_campaign"
     },
     {
-      "title": "Robotaxi 即将开启无人运营、机器人脱稿演讲，小鹏科技日迎来了自己的「奇点时刻」",
-      "desc": "今日热点：Robotaxi 即将开启无人运营、机器人脱稿演讲，小鹏科技日迎来了自己的「奇点时刻」",
+      "title": "启源 Q06 迎来大升级！长安发布天枢领航 Ultra 2.0，明年 1 月推车位到车位｜广州车展",
+      "desc": "今日热点：启源 Q06 迎来大升级！长安发布天枢领航 Ultra 2.0，明年 1 月推车位到车位｜广州车展",
       "tag": "综合",
       "time": "今日",
-      "source": "https://www.ifanr.com/1695212?utm_source=rss&utm_medium=rss&utm_campaign"
+      "source": "https://www.ifanr.com/1695936?utm_source=rss&utm_medium=rss&utm_campaign"
+    },
+    {
+      "title": "阿维塔 T09 中国首秀，这是一辆可以在四座和六座之间切换的旗舰 SUV丨广州车展",
+      "desc": "今日热点：阿维塔 T09 中国首秀，这是一辆可以在四座和六座之间切换的旗舰 SUV丨广州车展",
+      "tag": "综合",
+      "time": "今日",
+      "source": "https://www.ifanr.com/1695875?utm_source=rss&utm_medium=rss&utm_campaign"
     }
   ],
   "aiTools": [
@@ -123,33 +123,33 @@ window.DAILY_FEED = {
       "time": "今日推荐"
     },
     {
-      "title": "ON看Viper告别直播哭了",
-      "desc": "今日热点：ON看Viper告别直播哭了",
-      "tag": "直播",
-      "type": "topic",
-      "category": "live",
-      "time": "今日推荐"
-    },
-    {
-      "title": "欧洲电商巨头，集体涌向二手市场",
-      "desc": "今日热点：欧洲电商巨头，集体涌向二手市场",
-      "tag": "市场",
+      "title": "众筹超千万美元，这台UV打印机盯上海外定制小生意",
+      "desc": "今日热点：众筹超千万美元，这台UV打印机盯上海外定制小生意",
+      "tag": "商家",
       "type": "topic",
       "category": "trend",
       "time": "今日推荐"
     },
     {
-      "title": "后排空间直逼迈巴赫！配置看齐六座旗舰，吉利银河 M8 预售价 19.98 万起",
-      "desc": "今日热点：后排空间直逼迈巴赫！配置看齐六座旗舰，吉利银河 M8 预售价 19.98 万起",
+      "title": "10.28 万元起，800V、后驱、原厂改装，零跑 Lafa5 想做一辆有趣的电动车丨广州车展",
+      "desc": "今日热点：10.28 万元起，800V、后驱、原厂改装，零跑 Lafa5 想做一辆有趣的电动车丨广州车展",
       "tag": "综合",
       "type": "topic",
       "category": "trend",
       "time": "今日推荐"
     },
     {
-      "title": "华为全新一代巨鲸电池平台：电池安全，不能只看新车出厂的那一天",
-      "desc": "今日热点：华为全新一代巨鲸电池平台：电池安全，不能只看新车出厂的那一天",
-      "tag": "平台",
+      "title": "从「中国特供」变全球旗舰，搭载 Momenta 智驾的本田冠道来了｜广州车展",
+      "desc": "今日热点：从「中国特供」变全球旗舰，搭载 Momenta 智驾的本田冠道来了｜广州车展",
+      "tag": "综合",
+      "type": "topic",
+      "category": "trend",
+      "time": "今日推荐"
+    },
+    {
+      "title": "启源 Q06 迎来大升级！长安发布天枢领航 Ultra 2.0，明年 1 月推车位到车位｜广州车展",
+      "desc": "今日热点：启源 Q06 迎来大升级！长安发布天枢领航 Ultra 2.0，明年 1 月推车位到车位｜广州车展",
+      "tag": "综合",
       "type": "topic",
       "category": "trend",
       "time": "今日推荐"
@@ -164,13 +164,6 @@ window.DAILY_FEED = {
       "source": "http://www.geekpark.net/news/374417"
     },
     {
-      "title": "早报｜手机厂商集体下调明年出货目标，曝小米降幅达25%/小鹏悠游开启主驾无人载客/宕机后，微软进入「红色警报」",
-      "desc": "今日热点：早报｜手机厂商集体下调明年出货目标，曝小米降幅达25%/小鹏悠游开启主驾无人载客/宕机后，微软进入「红色警报」",
-      "tag": "上市",
-      "time": "今日",
-      "source": "https://www.ifanr.com/1695128?utm_source=rss&utm_medium=rss&utm_campaign"
-    },
-    {
       "title": "早报｜双11手机销量降17%，前五都是iPhone/马斯克：美国每名儿童赠送两股SpaceX/小红书处置逾万篇虚假人设笔记",
       "desc": "今日热点：早报｜双11手机销量降17%，前五都是iPhone/马斯克：美国每名儿童赠送两股SpaceX/小红书处置逾万篇虚假人设笔记",
       "tag": "腾讯",
@@ -178,18 +171,18 @@ window.DAILY_FEED = {
       "source": "https://www.ifanr.com/1695611?utm_source=rss&utm_medium=rss&utm_campaign"
     },
     {
-      "title": "18.79 万元起！比亚迪唐 EV 正式上市，砍掉七座换来 850km 续航，还有线控底盘",
-      "desc": "今日热点：18.79 万元起！比亚迪唐 EV 正式上市，砍掉七座换来 850km 续航，还有线控底盘",
+      "title": "24.99 万元起！宝马新世代 i3 正式上市，纯电续航高达 1028km丨广州车展",
+      "desc": "今日热点：24.99 万元起！宝马新世代 i3 正式上市，纯电续航高达 1028km丨广州车展",
       "tag": "上市",
       "time": "今日",
-      "source": "https://www.ifanr.com/1691381?utm_source=rss&utm_medium=rss&utm_campaign"
+      "source": "https://www.ifanr.com/1695987?utm_source=rss&utm_medium=rss&utm_campaign"
     },
     {
-      "title": "腾讯阿里百度集体交账，AI进入兑现期",
-      "desc": "今日热点：腾讯阿里百度集体交账，AI进入兑现期",
-      "tag": "阿里",
+      "title": "蔚来三大品牌首次同台亮相广州车展，ES8、乐道 L60 推出全新特别版车型丨广州车展",
+      "desc": "今日热点：蔚来三大品牌首次同台亮相广州车展，ES8、乐道 L60 推出全新特别版车型丨广州车展",
+      "tag": "品牌",
       "time": "今日",
-      "source": "https://www.tmtpost.com/8219613.html"
+      "source": "https://www.ifanr.com/1695848?utm_source=rss&utm_medium=rss&utm_campaign"
     }
   ],
   "contentMaterials": [
@@ -222,14 +215,14 @@ window.DAILY_FEED = {
       "category": "trend"
     },
     {
-      "source": "ON看Viper告别直播哭了",
-      "hook": "你知道吗？ON看Viper告别直播哭了，背后藏着电商人必须看懂的信号。",
+      "source": "众筹超千万美元，这台UV打印机盯上海外定制小生意",
+      "hook": "你知道吗？众筹超千万美元，这台UV打印机盯上海外定制小生意，背后藏着电商人必须看懂的信号。",
       "angle": "从商家实战角度拆解这个热点对运营的影响",
       "script": [
         {
           "shot": "开场",
           "visual": "热点数据截图",
-          "voiceover": "今天聊ON看Viper告别直播哭了，这事跟每个做电商的都有关系。"
+          "voiceover": "今天聊众筹超千万美元，这台UV打印机盯上海外定制小生意，这事跟每个做电商的都有关系。"
         },
         {
           "shot": "拆解",
@@ -243,49 +236,21 @@ window.DAILY_FEED = {
         }
       ],
       "keyPoints": [
-        "核心：ON看Viper告别直播哭了",
-        "趋势：平台正在加码这个方向"
-      ],
-      "cta": "关注我，每天更新电商+AI的实战干货。",
-      "category": "live"
-    },
-    {
-      "source": "欧洲电商巨头，集体涌向二手市场",
-      "hook": "你知道吗？欧洲电商巨头，集体涌向二手市场，背后藏着电商人必须看懂的信号。",
-      "angle": "从商家实战角度拆解这个热点对运营的影响",
-      "script": [
-        {
-          "shot": "开场",
-          "visual": "热点数据截图",
-          "voiceover": "今天聊欧洲电商巨头，集体涌向二手市场，这事跟每个做电商的都有关系。"
-        },
-        {
-          "shot": "拆解",
-          "visual": "要点列表",
-          "voiceover": "三个关键点你必须知道……"
-        },
-        {
-          "shot": "落地",
-          "visual": "操作步骤",
-          "voiceover": "具体怎么用，我给你拆成三步走。"
-        }
-      ],
-      "keyPoints": [
-        "核心：欧洲电商巨头，集体涌向二手市场",
+        "核心：众筹超千万美元，这台UV打印机盯上海外定制小生意",
         "趋势：平台正在加码这个方向"
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
       "category": "trend"
     },
     {
-      "source": "后排空间直逼迈巴赫！配置看齐六座旗舰，吉利银河 M8 预售价 19.98 万起",
-      "hook": "你知道吗？后排空间直逼迈巴赫！配置看齐六座旗舰，吉利银河 M8 预售价 19.98 万起，背后藏着电商人必须看懂的信号。",
+      "source": "10.28 万元起，800V、后驱、原厂改装，零跑 Lafa5 想做一辆有趣的电动车丨广州车展",
+      "hook": "你知道吗？10.28 万元起，800V、后驱、原厂改装，零跑 Lafa5 想做一辆有趣的电动车丨广州车展，背后藏着电商人必须看懂的信号。",
       "angle": "从商家实战角度拆解这个热点对运营的影响",
       "script": [
         {
           "shot": "开场",
           "visual": "热点数据截图",
-          "voiceover": "今天聊后排空间直逼迈巴赫！配置看齐六座旗舰，吉利银河 M8 预售价 19.98 万起，这事跟每个做电商的都有关系。"
+          "voiceover": "今天聊10.28 万元起，800V、后驱、原厂改装，零跑 Lafa5 想做一辆有趣的电动车丨广州车展，这事跟每个做电商的都有关系。"
         },
         {
           "shot": "拆解",
@@ -299,21 +264,21 @@ window.DAILY_FEED = {
         }
       ],
       "keyPoints": [
-        "核心：后排空间直逼迈巴赫！配置看齐六座旗舰，吉利银河 M8 预售价 19.98 万起",
+        "核心：10.28 万元起，800V、后驱、原厂改装，零跑 Lafa5 想做一辆有趣的电动车丨广州车展",
         "趋势：平台正在加码这个方向"
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
       "category": "trend"
     },
     {
-      "source": "华为全新一代巨鲸电池平台：电池安全，不能只看新车出厂的那一天",
-      "hook": "你知道吗？华为全新一代巨鲸电池平台：电池安全，不能只看新车出厂的那一天，背后藏着电商人必须看懂的信号。",
+      "source": "从「中国特供」变全球旗舰，搭载 Momenta 智驾的本田冠道来了｜广州车展",
+      "hook": "你知道吗？从「中国特供」变全球旗舰，搭载 Momenta 智驾的本田冠道来了｜广州车展，背后藏着电商人必须看懂的信号。",
       "angle": "从商家实战角度拆解这个热点对运营的影响",
       "script": [
         {
           "shot": "开场",
           "visual": "热点数据截图",
-          "voiceover": "今天聊华为全新一代巨鲸电池平台：电池安全，不能只看新车出厂的那一天，这事跟每个做电商的都有关系。"
+          "voiceover": "今天聊从「中国特供」变全球旗舰，搭载 Momenta 智驾的本田冠道来了｜广州车展，这事跟每个做电商的都有关系。"
         },
         {
           "shot": "拆解",
@@ -327,7 +292,35 @@ window.DAILY_FEED = {
         }
       ],
       "keyPoints": [
-        "核心：华为全新一代巨鲸电池平台：电池安全，不能只看新车出厂的那一天",
+        "核心：从「中国特供」变全球旗舰，搭载 Momenta 智驾的本田冠道来了｜广州车展",
+        "趋势：平台正在加码这个方向"
+      ],
+      "cta": "关注我，每天更新电商+AI的实战干货。",
+      "category": "trend"
+    },
+    {
+      "source": "启源 Q06 迎来大升级！长安发布天枢领航 Ultra 2.0，明年 1 月推车位到车位｜广州车展",
+      "hook": "你知道吗？启源 Q06 迎来大升级！长安发布天枢领航 Ultra 2.0，明年 1 月推车位到车位｜广州车展，背后藏着电商人必须看懂的信号。",
+      "angle": "从商家实战角度拆解这个热点对运营的影响",
+      "script": [
+        {
+          "shot": "开场",
+          "visual": "热点数据截图",
+          "voiceover": "今天聊启源 Q06 迎来大升级！长安发布天枢领航 Ultra 2.0，明年 1 月推车位到车位｜广州车展，这事跟每个做电商的都有关系。"
+        },
+        {
+          "shot": "拆解",
+          "visual": "要点列表",
+          "voiceover": "三个关键点你必须知道……"
+        },
+        {
+          "shot": "落地",
+          "visual": "操作步骤",
+          "voiceover": "具体怎么用，我给你拆成三步走。"
+        }
+      ],
+      "keyPoints": [
+        "核心：启源 Q06 迎来大升级！长安发布天枢领航 Ultra 2.0，明年 1 月推车位到车位｜广州车展",
         "趋势：平台正在加码这个方向"
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
