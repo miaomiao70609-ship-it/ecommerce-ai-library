@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-11-28 04:57",
+  "lastUpdate": "2026-11-28 15:13",
   "hotTopics": [
     {
       "title": "利润增速降至 0.7%， 拼多多「申诉优赔」还要给商家补贴几十亿",
@@ -30,11 +30,11 @@
       "source": "https://www.ifanr.com/1695936?utm_source=rss&utm_medium=rss&utm_campaign"
     },
     {
-      "title": "阿维塔 T09 中国首秀，这是一辆可以在四座和六座之间切换的旗舰 SUV丨广州车展",
-      "desc": "今日热点：阿维塔 T09 中国首秀，这是一辆可以在四座和六座之间切换的旗舰 SUV丨广州车展",
+      "title": "德系最大 SUV 来了！奥迪 Q9 国内首秀，车长超 5 米 3，还有一台大 V6丨广州车展",
+      "desc": "今日热点：德系最大 SUV 来了！奥迪 Q9 国内首秀，车长超 5 米 3，还有一台大 V6丨广州车展",
       "tag": "综合",
       "time": "今日",
-      "source": "https://www.ifanr.com/1695875?utm_source=rss&utm_medium=rss&utm_campaign"
+      "source": "https://www.ifanr.com/1696001?utm_source=rss&utm_medium=rss&utm_campaign"
     }
   ],
   "aiTools": [
@@ -121,14 +121,6 @@
       "time": "今日推荐"
     },
     {
-      "title": "众筹超千万美元，这台UV打印机盯上海外定制小生意",
-      "desc": "今日热点：众筹超千万美元，这台UV打印机盯上海外定制小生意",
-      "tag": "商家",
-      "type": "topic",
-      "category": "trend",
-      "time": "今日推荐"
-    },
-    {
       "title": "10.28 万元起，800V、后驱、原厂改装，零跑 Lafa5 想做一辆有趣的电动车丨广州车展",
       "desc": "今日热点：10.28 万元起，800V、后驱、原厂改装，零跑 Lafa5 想做一辆有趣的电动车丨广州车展",
       "tag": "综合",
@@ -151,22 +143,30 @@
       "type": "topic",
       "category": "trend",
       "time": "今日推荐"
+    },
+    {
+      "title": "德系最大 SUV 来了！奥迪 Q9 国内首秀，车长超 5 米 3，还有一台大 V6丨广州车展",
+      "desc": "今日热点：德系最大 SUV 来了！奥迪 Q9 国内首秀，车长超 5 米 3，还有一台大 V6丨广州车展",
+      "tag": "综合",
+      "type": "topic",
+      "category": "trend",
+      "time": "今日推荐"
     }
   ],
   "competitorNews": [
+    {
+      "title": "AI 硬件竞争白热化，OpenAI 反诉苹果窃密；iPhone 18 量产再度推迟；王兴回应美团与小微试点合作",
+      "desc": "今日热点：AI 硬件竞争白热化，OpenAI 反诉苹果窃密；iPhone 18 量产再度推迟；王兴回应美团与小微试点合作",
+      "tag": "财报",
+      "time": "今日",
+      "source": "http://www.geekpark.net/news/374621"
+    },
     {
       "title": "华为星芒O1 Pro，如何把手机 AI 再往前努一小步",
       "desc": "今日热点：华为星芒O1 Pro，如何把手机 AI 再往前努一小步",
       "tag": "字节",
       "time": "今日",
       "source": "http://www.geekpark.net/news/374417"
-    },
-    {
-      "title": "早报｜双11手机销量降17%，前五都是iPhone/马斯克：美国每名儿童赠送两股SpaceX/小红书处置逾万篇虚假人设笔记",
-      "desc": "今日热点：早报｜双11手机销量降17%，前五都是iPhone/马斯克：美国每名儿童赠送两股SpaceX/小红书处置逾万篇虚假人设笔记",
-      "tag": "腾讯",
-      "time": "今日",
-      "source": "https://www.ifanr.com/1695611?utm_source=rss&utm_medium=rss&utm_campaign"
     },
     {
       "title": "24.99 万元起！宝马新世代 i3 正式上市，纯电续航高达 1028km丨广州车展",
@@ -181,6 +181,13 @@
       "tag": "品牌",
       "time": "今日",
       "source": "https://www.ifanr.com/1695848?utm_source=rss&utm_medium=rss&utm_campaign"
+    },
+    {
+      "title": "半年亏5亿、自有品牌销售占3.6%，大润发凭什么留住顾客？",
+      "desc": "今日热点：半年亏5亿、自有品牌销售占3.6%，大润发凭什么留住顾客？",
+      "tag": "品牌",
+      "time": "今日",
+      "source": "https://www.tmtpost.com/8220992.html"
     }
   ],
   "contentMaterials": [
@@ -207,34 +214,6 @@
       ],
       "keyPoints": [
         "核心：利润增速降至 0.7%， 拼多多「申诉优赔」还要给商家补贴几十亿",
-        "趋势：平台正在加码这个方向"
-      ],
-      "cta": "关注我，每天更新电商+AI的实战干货。",
-      "category": "trend"
-    },
-    {
-      "source": "众筹超千万美元，这台UV打印机盯上海外定制小生意",
-      "hook": "你知道吗？众筹超千万美元，这台UV打印机盯上海外定制小生意，背后藏着电商人必须看懂的信号。",
-      "angle": "从商家实战角度拆解这个热点对运营的影响",
-      "script": [
-        {
-          "shot": "开场",
-          "visual": "热点数据截图",
-          "voiceover": "今天聊众筹超千万美元，这台UV打印机盯上海外定制小生意，这事跟每个做电商的都有关系。"
-        },
-        {
-          "shot": "拆解",
-          "visual": "要点列表",
-          "voiceover": "三个关键点你必须知道……"
-        },
-        {
-          "shot": "落地",
-          "visual": "操作步骤",
-          "voiceover": "具体怎么用，我给你拆成三步走。"
-        }
-      ],
-      "keyPoints": [
-        "核心：众筹超千万美元，这台UV打印机盯上海外定制小生意",
         "趋势：平台正在加码这个方向"
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
@@ -319,6 +298,34 @@
       ],
       "keyPoints": [
         "核心：启源 Q06 迎来大升级！长安发布天枢领航 Ultra 2.0，明年 1 月推车位到车位｜广州车展",
+        "趋势：平台正在加码这个方向"
+      ],
+      "cta": "关注我，每天更新电商+AI的实战干货。",
+      "category": "trend"
+    },
+    {
+      "source": "德系最大 SUV 来了！奥迪 Q9 国内首秀，车长超 5 米 3，还有一台大 V6丨广州车展",
+      "hook": "你知道吗？德系最大 SUV 来了！奥迪 Q9 国内首秀，车长超 5 米 3，还有一台大 V6丨广州车展，背后藏着电商人必须看懂的信号。",
+      "angle": "从商家实战角度拆解这个热点对运营的影响",
+      "script": [
+        {
+          "shot": "开场",
+          "visual": "热点数据截图",
+          "voiceover": "今天聊德系最大 SUV 来了！奥迪 Q9 国内首秀，车长超 5 米 3，还有一台大 V6丨广州车展，这事跟每个做电商的都有关系。"
+        },
+        {
+          "shot": "拆解",
+          "visual": "要点列表",
+          "voiceover": "三个关键点你必须知道……"
+        },
+        {
+          "shot": "落地",
+          "visual": "操作步骤",
+          "voiceover": "具体怎么用，我给你拆成三步走。"
+        }
+      ],
+      "keyPoints": [
+        "核心：德系最大 SUV 来了！奥迪 Q9 国内首秀，车长超 5 米 3，还有一台大 V6丨广州车展",
         "趋势：平台正在加码这个方向"
       ],
       "cta": "关注我，每天更新电商+AI的实战干货。",
